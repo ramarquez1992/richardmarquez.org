@@ -1,0 +1,15 @@
+/* Global */
+html * {
+	margin: 0;
+}
+
+body {
+	font-family: helvetica,arial,sans-serif;
+}
+
+a {
+}
+
+a:hover, a:focus, a:active  {
+}
+
