@@ -1,4 +1,8 @@
 /* Global */
+* {
+  transition-duration: .1s;
+}
+
 html * {
 	margin: 0;
 }
@@ -70,21 +74,38 @@ nav li:last-child a:hover {
 }
 
 /* Sections */
-h2 {
-  text-transform: lowercase;
-}
-
-h2:before {
-  content: "\:";
-}
-
-h2:after {
-  content: "\:";
-}
-
 section {
   padding: 20px 0px;
   color: #fff;
+}
+
+section h2 {
+  text-transform: lowercase;
+  margin-bottom: 25px;
+}
+
+section h2:before {
+  content: "\:";
+}
+
+section h2:after {
+  content: "\:";
+}
+
+section h3 {
+  display: none;
+  font-size: 1em;
+  text-transform: lowercase;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+section li {
+  display: inline-block;
 }
 
 section#writings {
@@ -95,7 +116,17 @@ section#portfolio {
   background-color: #30f;
 }
 
-section#code {
+section#portfolio img {
+  height: 200px;
+  opacity: .8;
+  cursor: pointer;
+}
+
+section#portfolio img:hover {
+  opacity: 1;
+}
+
+section#feed {
   background-color: #0c9;
 }
 
