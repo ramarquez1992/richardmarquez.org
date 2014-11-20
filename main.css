@@ -4,7 +4,7 @@ html * {
 }
 
 body {
-	font-family: helvetica,arial,sans-serif;
+	font-family: helvetica-neue,helvetica,arial,sans-serif;
 }
 
 a {
@@ -12,4 +12,75 @@ a {
 
 a:hover, a:focus, a:active  {
 }
+
+.clear {
+  clear: both;
+}
+
+header {
+  background-color: #333;
+  padding: 30px 50px;
+}
+
+header img#gravatar {
+  display: none;
+  float: left;
+  width: 100px;
+  border: 4px solid #ff6;
+  border-radius: 55px;
+}
+
+header h1#title {
+  float: left;
+  color: #fff;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 10px 40px;
+}
+
+nav li {
+  display: inline-block;
+  width: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li:last-child a {
+  padding: 10px 30px;
+  background-color: #f06;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #ff6;
+}
+
+nav li:last-child a:hover {
+  background-color: #f93;
+}
+
+h2 {
+  text-transform: lowercase;
+}
+
+h2:before {
+  content: "\:";
+}
+
+h2:after {
+  content: "\:";
+}
+
+
 
