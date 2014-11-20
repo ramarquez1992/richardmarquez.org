@@ -5,6 +5,7 @@ html * {
 
 body {
 	font-family: helvetica-neue,helvetica,arial,sans-serif;
+  background-color: #ddd;
 }
 
 a {
@@ -17,17 +18,15 @@ a:hover, a:focus, a:active  {
   clear: both;
 }
 
-header {
-  background-color: #333;
-  padding: 30px 50px;
+.container {
+  width: 85%;
+  margin: auto;
 }
 
-header img#gravatar {
-  display: none;
-  float: left;
-  width: 100px;
-  border: 4px solid #ff6;
-  border-radius: 55px;
+/* Header */
+header {
+  background-color: #333;
+  padding: 30px 0px;
 }
 
 header h1#title {
@@ -70,6 +69,7 @@ nav li:last-child a:hover {
   background-color: #f93;
 }
 
+/* Sections */
 h2 {
   text-transform: lowercase;
 }
@@ -82,5 +82,69 @@ h2:after {
   content: "\:";
 }
 
+section {
+  padding: 20px 0px;
+  color: #fff;
+}
 
+section#writings {
+  background-color: #339;
+}
 
+section#portfolio {
+  background-color: #30f;
+}
+
+section#code {
+  background-color: #0c9;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0px;
+}
+
+footer img#gravatar {
+  float: left;
+  border-radius: 55px;
+  margin: 0px;
+  width: 100px;
+}
+
+footer ul#social-media {
+  float: left;
+  margin: 30px 0px 0px 0px;
+  list-style-type: none;
+}
+
+footer ul#social-media li {
+  display: inline;
+}
+
+footer ul#social-media img {
+  border-radius: 23px;
+  opacity: .7;
+}
+
+footer ul#social-media img:hover {
+  opacity: 1;
+}
+
+footer ul#contact {
+  float: right;
+  list-style-type: none;
+}
+
+footer ul#contact li {
+}
+
+footer ul#contact h3 {
+  display: inline;
+  font-size: normal;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+footer ul#contact li:last-child {
+  margin-top: 20px;
+}
