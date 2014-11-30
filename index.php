@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="icon" href="resources/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="resources/favicon.png" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </head>
   <body>
@@ -34,22 +35,29 @@
       <div class="container">
         <h2>Portfolio</h2>
         <ul>
-          <li>
-            <h3>WSU UPAC</h3>
-            <img alt="WSU UPAC" src="resources/portfolio/upac-iphone.png" />
-          </li>
-          <li>
-            <h3>Itechra CMS</h3>
-            <img alt="Itechra CMS" src="resources/portfolio/itechra_cms.png" />
-          </li>
-          <li>
-            <h3>Bookmarks Viewer</h3>
-            <img alt="Bookmarks Viewer" src="resources/portfolio/bookmarks_viewer.png" />
-          </li>
-          <li>
-            <h3>A Better Way</h3>
-            <img alt="A Better Way" src="resources/portfolio/a_better_way.png" />
-          </li>
+          <?php
+            $portfolioDir = 'portfolio/';
+            $portfolioImageDir = $portfolioDir . 'images/';
+            $files = scandir($portfolioImageDir);
+
+            foreach ($files as $file) {
+              // Do not include hidden files
+              if (preg_match('/^\./', $file) == 1) {
+                continue;
+              }
+
+              $info = pathinfo($file);
+              $cleanName = basename($file, '.' . $info['extension']);
+
+              echo '<li>';
+
+              echo '<h3>' . $cleanName . '</h3>';
+              echo '<img alt="' . $cleanName . '" src="' . $portfolioImageDir . $file . '" />';
+
+              echo '</li>';
+            }
+            
+          ?>
         </ul>
       </div>
     </section>
@@ -75,6 +83,7 @@
           <li>Winona, MN - U.S.A.</li>
         </ul>
       </div>
+      <div class="clear"></div>
     </footer>
   </body>
 </html>

@@ -9,6 +9,7 @@ html * {
 
 body {
 	font-family: helvetica-neue,helvetica,arial,sans-serif;
+  font-size: small;
   background-color: #ddd;
 }
 
@@ -93,7 +94,6 @@ section h2:after {
 }
 
 section h3 {
-  display: none;
   font-size: 1em;
   text-transform: lowercase;
 }
