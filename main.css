@@ -121,7 +121,7 @@ section h2 {
   display: block;
   margin: auto;
   width: 150px;
-  border: 1px solid #888;
+  border: 1px solid #aaa;
   border-radius: 1px;
   box-shadow: 7px 7px 0px #ff6;
 }
@@ -259,5 +259,9 @@ footer {
   background-color: #ccc;
   color: #333;
   text-align: center;
+}
+
+footer .links {
+  margin-left: 100px;
 }
 

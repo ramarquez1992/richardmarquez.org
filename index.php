@@ -178,8 +178,8 @@
 
     <footer>
       <p>
-        Copyright <em>Richard Marquez</em> 2015 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://linode.com">Linode</a> | <a href="http://lighttpd.net">Lighttpd</a>
+        Copyright <em>Richard Marquez</em> 2015 
+        <span class="links"><a href="http://linode.com">Linode</a> | <a href="http://lighttpd.net">Lighttpd</a></span>
       </p>
     </footer>
   </body>
