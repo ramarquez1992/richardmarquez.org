@@ -1,51 +1,25 @@
 window.onload = function() {
-  portfolioInit();
+  contactFormInit()
 }
 
-function portfolioInit() {
-  // Set onclick() for each work
-  $('#portfolioList').children().each(function() {
-
-    $(this).click(function() {
-      showWork($(this).children('h3').html(), $(this).children('img').attr('src'));
-    });
-
-  });
+function contactFormInit() {
+  inputInit($('#contact-name'), 'name');
+  inputInit($('#contact-email'), 'email');
+  inputInit($('#contact-message'), 'message');
 }
 
-function showWork(name, imgSrc) {
-  var shade = $('<div id="shade"></div>');
-  shade.click(function() {
-    removeWork();
-  });
-  $('body').append(shade);
-
-  var workContainer = $('<div id="workContainer"></div>');
-  $('body').append(workContainer);
-
-  var header = $('<h1>' + name + '</h1>');
-  $('#workContainer').append(header);
-
-  var image = $('<img alt="' + name + '" src="' + imgSrc + '" />');
-  $('#workContainer').append(image);
-
-  $.get('portfolio/text/' + name, function(data) {
-
-    var desc = $('<div id="description">' + data + '</div>');
-    $('#workContainer').append(desc);
-
-
-    var close = $('<div id="close">Close</div>');
-    close.click(function() {
-      removeWork();
-    });
-
-    $('#workContainer').append(close);
+function inputInit(input, value) {
+  $(input).focusin(function() {
+    if ($(this).val() == value) {
+      $(this).val('');
+      $(this).css('color', '#000');
+    }
   });
 
-}
-
-function removeWork() {
-    $('#shade').remove();
-    $('#workContainer').remove();
+  $(input).focusout(function() {
+    if ($(this).val() == '') {
+      $(this).val(value);
+      $(this).css('color', '#666');
+    }
+  });
 }

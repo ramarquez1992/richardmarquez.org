@@ -185,6 +185,10 @@ ul.social-media img:hover {
   margin-left: 10%;
 }
 
+.work .pic img {
+  width: 100%;
+}
+
 .work ul.skills {
   padding: 0;
   list-style-type: none;
@@ -236,10 +240,30 @@ ul.social-media img:hover {
   display: inline;
 }
 
+.form-alert {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 0px;
+}
+
+.green-alert {
+  border-bottom: 1px solid #383;
+  background-color: #afa;
+  color: #383;
+}
+
+.red-alert {
+  border-bottom: 1px solid #c33;
+  background-color: #faa;
+  color: #c33;
+}
+
 .contact form input, .contact form textarea {
   display: block;
   margin-bottom: 10px;
-  color: #444;
+  color: #666;
   font-size: 1.3em;
   border: 1px solid #aaa;
   border-radius: 2px;
@@ -260,6 +284,7 @@ input.button {
   border: none !important;
   border-radius: 0px !important;
   color: #fff !important;
+  cursor: pointer;
 }
 
 footer {

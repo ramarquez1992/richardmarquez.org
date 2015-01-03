@@ -1,3 +1,44 @@
+<?php
+
+function sanitize($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+
+  return $data;
+}
+
+$error = '';
+$success = '';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if ($_POST['name'] && $_POST['name'] != 'name' &&
+    $_POST['email'] && $_POST['email'] != 'email' &&
+    $_POST['message'] && $_POST['message'] != 'message') {
+
+    $email = sanitize($_POST['email']);
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $name = sanitize($_POST['name']);
+      $message = sanitize($_POST['message']);
+
+      $to      = 'richard92m@me.com';
+      $subject = "richardmarquez.xyz - $name";
+      $headers = "From: $email" . "\r\n" .
+            "Reply-To: $email" . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+      mail($to, $subject, $message, $headers);
+      $success = 'Thanks for the message. I\'ll get back to you shortly.';
+    } else {
+        $error = 'Please enter a valid email.';
+    }
+
+  } else {
+    $error = 'Please fill out all fields.';
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +54,23 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <?php
+      if ($error != '') {
+        ?>
+        <p class="form-alert red-alert">
+          <?=$error;?>
+        </p>
+        <?php
+      }
+
+      if ($success != '') {
+        ?>
+        <p class="form-alert green-alert">
+          <?=$success;?>
+        </p>
+        <?php
+      }
+    ?>
     <header>
       <div class="container">
         <h1 id="title">Richard Marquez</h1>
@@ -94,13 +152,11 @@
           <li>Design</li>
         </ul>
 
-        <p class="blurb">
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        </p>
+        <div class="blurb">
+          <p>
+          UPAC is Winona State University's student organization enhancing the college experience through entertainment and events. See upcoming events and get notifications, enter raffles, view photos, and contact board members.
+          </p>
+        </div>
 
         <a href="https://itunes.apple.com/us/app/winona-state-upac/id944827063" target="_blank">
         <img class="badge" src="resources/app_store_badge.png" alt="See on App Store" />
@@ -165,10 +221,32 @@
           </ul>
         </div>
 
-        <form>
-          <input type="text" value="name" />
-          <input type="text" value="email" />
-          <textarea>message</textarea>
+        <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+
+          <input type="text" id="contact-name" name="name" value="<?php
+            if (isset($_POST['name']) && $success == '') {
+              echo $_POST['name'];
+            } else {
+              echo 'name';
+            }
+          ?>" />
+
+          <input type="text" id="contact-email" name="email" value="<?php
+            if (isset($_POST['email']) && $success == '') {
+              echo $_POST['email'];
+            } else {
+              echo 'email';
+            }
+          ?>" />
+
+          <textarea id="contact-message" name="message"><?php
+            if (isset($_POST['message']) && $success == '') {
+              echo $_POST['message'];
+            } else {
+              echo 'message';
+            }
+          ?></textarea>
+
           <input class="button" type="submit" value="Submit" />
         </form>
 
