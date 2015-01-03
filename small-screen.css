@@ -8,12 +8,20 @@
     float: none;
     text-align: center;
     font-size: 1.7em;
+    margin-bottom: 0px;
   }
 
   nav ul {
-    margin: 40px auto 0px auto;
+    margin: 20px auto 0px auto;
+    padding: 0px;
     float: none;
     text-align: center;
+  }
+
+  nav li:last-child {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
   }
 
   section {

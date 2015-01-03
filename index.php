@@ -166,9 +166,9 @@
         </div>
 
         <form>
-          <input type="text" value="Name" />
-          <input type="text" value="Email" />
-          <textarea>Message</textarea>
+          <input type="text" value="name" />
+          <input type="text" value="email" />
+          <textarea>message</textarea>
           <input class="button" type="submit" value="Submit" />
         </form>
 

@@ -42,6 +42,14 @@ a:hover, a:focus, a:active  {
   clear: both;
 }
 
+footer, h1, h3, h4, .button, nav a {
+  text-transform: lowercase;
+}
+
+h2, footer em {
+  text-transform: uppercase;
+}
+
 /* Header */
 header {
   background-color: #333;
