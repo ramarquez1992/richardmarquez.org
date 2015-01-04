@@ -110,16 +110,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <div class="info">
           <p>
-            <img src="resources/email.png" /><a href="mailto:richard92m@me.com">richard92m@me.com</a><br />
-            <img src="resources/location.png" />Winona, MN
+            <img src="resources/email.png" alt="Email" /><a href="mailto:richard92m@me.com">richard92m@me.com</a><br />
+            <img src="resources/location.png" alt="Location" />Winona, MN
           </p>
-      </div>
+        </div>
 
-      <p class="blurb">
-        Hi, my name is Richard Marquez and I'm a full-stack software developer
-        and designer. Below, you can check out some of the products that I've shipped.
-        Feel free to <a href="#contact">get in touch</a>!
-      </p>
+        <p class="blurb">
+          Hi, my name is Richard Marquez and I'm a full-stack software developer
+          and designer. Below, you can check out some of the products that I've shipped.
+          Feel free to <a href="#contact">get in touch</a>!
+        </p>
+      </div>
     </section>
 
     <section class="work">
