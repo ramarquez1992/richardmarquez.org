@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </header>
 
-    <section class="about gray">
+    <section class="about gray grid">
       <div class="container">
         <img class="gravatar" src="resources/richardmarquez.jpg" alt="Gravatar" />
 
@@ -109,37 +109,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <p class="blurb">
-        Hi, my name is Richard Marquez and I'm a full-stack software developer.
-        Below, you can check out some of the products that I've shipped; feel free
-        to take a glance at their <a href="http://github.com/richard92m">source</a>.
-        Feel free to
-        <a href="#contact">get in touch</a>!
+        Hi, my name is Richard Marquez and I'm a full-stack software developer
+        and designer. Below, you can check out some of the products that I've shipped.
+        Feel free to <a href="#contact">get in touch</a>!
       </p>
-    </section>
-
-    <section class="work">
-      <div class="container">
-        <div class="pic">
-          <img src="resources/portfolio/miller.png" alt="Miller Ingenuity" />
-        </div>
-
-        <h2>Miller Ingenuity</h2>
-
-        <ul class="skills">
-          <li>Design</li>
-          <li>Web</li>
-          <li>Systems</li>
-        </ul>
-
-        <p class="blurb">
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        </p>
-        <div class="clear"></div>
-      </div>
     </section>
 
     <section class="work">
@@ -159,7 +132,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <div class="blurb">
           <p>
-          UPAC is Winona State University's student organization enhancing the college experience through entertainment and events. See upcoming events and get notifications, enter raffles, view photos, and contact board members.
+          <a href="http://www.winona.edu/upac/">UPAC</a> is Winona State University's
+          student organization enhancing the college experience through entertainment
+          and events.
+          </p>
+          <p>
+          See upcoming events and get notifications, enter raffles, view photos,
+          and contact board members. Makes use of the
+          <a href="http://developers.facebook.com">Facebook</a> and
+          <a href="http://parse.com">Parse</a> APIs to manage information about
+          events and raffles.
           </p>
         </div>
 
@@ -167,6 +149,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <img class="badge" src="resources/app_store_badge.png" alt="See on App Store" />
         </a>
 
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <div class="pic">
+          <img src="resources/portfolio/miller.png" alt="Miller Ingenuity" />
+        </div>
+
+        <h2>Miller Ingenuity</h2>
+
+        <ul class="skills">
+          <li>Design</li>
+          <li>Web</li>
+          <li>Systems</li>
+        </ul>
+
+        <div class="blurb">
+          <p>
+            I was the lead systems designer for an online <a href="http://stage-gate.com">
+            Stage-Gate</a> product development implementation with multi-user
+            support at <a href="http://milleringenuity.com">Miller Ingenuity</a>.
+          </p>
+          <p>
+            This included the overall user-experience, data schema, as well as
+            the design.
+          </p>
+        </div>
         <div class="clear"></div>
       </div>
     </section>
@@ -188,11 +199,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </ul>
 
         <p class="blurb">
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-          aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
+          fre.ac is an arena arcade game with an orginal hand-drawn style that
+          I am currently developing for the iOS platform to be released in Q2 of 2015.
         </p>
 
         <a href="https://github.com/richard92m/three.bar" target="_blank">
@@ -204,7 +212,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </section>
 
 
-    <section id="contact" class="contact gray">
+    <section id="contact" class="contact gray grid">
       <div class="container">
         <h2>Get in Touch</h2>
         <h3><img src="resources/available.png" alt="Available" /> Available Now</h3>
