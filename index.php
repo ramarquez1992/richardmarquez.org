@@ -43,7 +43,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
     <title>Richard Marquez</title>
+    <!-- When no description tag is present, first paragraph is used
+         (the "About" blurb in this case)
+    <meta name="description" content="" />-->
+
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="stylesheet" type="text/css" href="small-screen.css" />
     <link rel="stylesheet" type="text/css" href="large-screen.css" />
@@ -86,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </header>
 
-    <section class="about purple">
+    <section class="about gray">
       <div class="container">
         <img class="gravatar" src="resources/richardmarquez.jpg" alt="Gravatar" />
 
@@ -104,15 +109,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <p class="blurb">
-        aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
-        aslflsdjflaj dflajdklsfjaklds fjaklds fkla kldf kla jdfklj aklsdj fklaj dklfj sdf
+        Hi, my name is Richard Marquez and I'm a full-stack software developer.
+        Below, you can check out some of the products that I've shipped; feel free
+        to take a glance at their <a href="http://github.com/richard92m">source</a>.
+        Feel free to
+        <a href="#contact">get in touch</a>!
       </p>
     </section>
 
-    <section class="work green">
+    <section class="work">
       <div class="container">
         <div class="pic">
           <img src="resources/portfolio/miller.png" alt="Miller Ingenuity" />
@@ -137,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </section>
 
-    <section class="work aqua">
+    <section class="work">
       <div class="container">
         <div class="pic">
           <img src="resources/portfolio/upac.png" alt="Winona State UPAC" />
@@ -146,10 +151,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>Winona State UPAC</h2>
 
         <ul class="skills">
-          <li>Programming</li>
           <li>iOS</li>
+          <li>Swift</li>
           <li>Backend</li>
-          <li>Design</li>
+          <li>Parse</li>
         </ul>
 
         <div class="blurb">
@@ -166,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </section>
 
-    <section class="work blue">
+    <section class="work">
       <div class="container">
         <div class="pic">
           <br/><br/><br/>
@@ -176,10 +181,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>fre.ac</h2>
 
         <ul class="skills">
-          <li>Programming</li>
           <li>iOS</li>
+          <li>Swift</li>
+          <li>SpriteKit</li>
           <li>Game</li>
-          <li>Art</li>
         </ul>
 
         <p class="blurb">
@@ -205,8 +210,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h3><img src="resources/available.png" alt="Available" /> Available Now</h3>
 
         <div class="info">
-          <img class="gravatar" src="resources/richardmarquez.jpg" alt="Gravatar" />
-
           <ul class="social-media">
             <li><a href="https://www.facebook.com/richard92m"><img alt="Facebook" src="resources/social_media/facebook.png" /></a></li>
             <li><a href="http://www.linkedin.com/pub/richard-marquez/84/927/733/"><img alt="LinkedIn" src="resources/social_media/linkedin.png" /></a></li>

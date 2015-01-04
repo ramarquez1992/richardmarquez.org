@@ -10,8 +10,7 @@ html * {
 body {
   font-smoothing: antialiased;
 	font-family: helvetica-neue,helvetica,arial,sans-serif;
-  font-size: small;
-  background-color: #ddd;
+  font-size: medium;
 }
 
 em {
@@ -19,22 +18,24 @@ em {
   font-style: normal;
 }
 
-a {
+a, a:visited {
+  //color: #333;
 }
 
 a:hover, a:focus, a:active  {
 }
 
-.skills li, .button {
+.skills li, .button, a.button {
   padding: 8px 25px;
   background-color: #f06;
-  color: #fff;
+  background-color: #75d;
   font-weight: bold;
-  box-shadow: 1px 1px 0px #ff6;
+  box-shadow: 2px 2px 0px #003;
+  color: #fff;
 }
 
 .skills li:hover, .button:hover {
-  background-color: #f93;
+  background-color: #3b3;
   text-decoration: none;
 }
 
@@ -46,22 +47,30 @@ footer, h1, h3, h4, .button, nav a {
   text-transform: lowercase;
 }
 
-h2, footer em {
+h2 {
+  //text-transform: capitalize;
+}
+
+p {
+  //text-transform: lowercase;
+}
+
+footer em {
   text-transform: uppercase;
 }
 
 /* Header */
 header {
   background-color: #333;
+  background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 header h1#title {
   float: left;
-  color: #fff;
   font-size: 2.2em;
-  text-transform: uppercase;
+  text-transform: small-caps;
 }
 
 nav ul {
@@ -76,8 +85,8 @@ nav li {
 }
 
 nav a {
+  color: #000;
   text-decoration: none;
-  color: #fff;
 }
 
 nav a:hover {
@@ -87,7 +96,7 @@ nav a:hover {
 /* Sections */
 section {
   padding: 75px 0px;
-  color: #fff;
+  color: #333;
 }
 
 section h2 {
@@ -116,22 +125,22 @@ section h2 {
 }
 
 .gray {
-  background-color: #dedede;
-  background-image: url("resources/backgrounds/spotted.png");
+  background-color: #e3e3e3;
+  //background-image: url("resources/backgrounds/spotted.png");
   color: #333;
 }
 
 .blurb {
   font-size: 1.1em;
+  text-align: justify;
 }
 
 .about img.gravatar {
   display: block;
   margin: auto;
   width: 150px;
-  border: 1px solid #aaa;
-  border-radius: 1px;
-  box-shadow: 7px 7px 0px #ff6;
+  border: 2px solid #e3e3e3;
+  box-shadow: 7px 7px 0px #bbb;
 }
 
 .about ul.social-media {
@@ -160,6 +169,7 @@ ul.social-media img:hover {
 }
 
 .about .info {
+  display: none;
   margin: auto;
   width: 175px;
   color: #ddd;
@@ -176,7 +186,18 @@ ul.social-media img:hover {
 
 .about .blurb {
   margin: 30px auto;
-  width: 60%;
+  width: 65%;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  text-align: justify;
+}
+
+.work {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.work .blurb {
+  //color: #000;
 }
 
 .work .pic {
@@ -266,7 +287,6 @@ ul.social-media img:hover {
   color: #666;
   font-size: 1.3em;
   border: 1px solid #aaa;
-  border-radius: 2px;
   padding: 10px;
 }
 
