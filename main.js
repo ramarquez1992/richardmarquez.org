@@ -1,6 +1,22 @@
 window.onload = function() {
-  contactFormInit();
   addLinkTargets('_blank');
+  menuInit();
+  contactFormInit();
+}
+
+function addLinkTargets(target) {
+  $('a').each(function() {
+    if ($(this).attr('href') != '#contact' && $(this).attr('href') != 'index.php') {
+
+      $(this).attr('target', target);
+    }
+  });
+}
+
+function menuInit() {
+  $('#menu-button').click(function() {
+    $('nav').toggle();
+  });
 }
 
 function contactFormInit() {
@@ -21,15 +37,6 @@ function inputInit(input, value) {
     if ($(this).val() == '') {
       $(this).val(value);
       $(this).css('color', '#666');
-    }
-  });
-}
-
-function addLinkTargets(target) {
-  $('a').each(function() {
-    if ($(this).attr('href') != '#contact' && $(this).attr('href') != 'index.php') {
-
-      $(this).attr('target', target);
     }
   });
 }

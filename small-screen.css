@@ -11,6 +11,32 @@
     margin-bottom: 0px;
   }
 
+  #mobile-buttons {
+    display: block;
+    margin: 2em auto 0px auto;
+    text-align: center;
+  }
+
+  #menu-button {
+    float: left;
+    cursor: pointer;
+  }
+
+  #menu-button:hover {
+    background-color: #75d;
+  }
+
+  #contact-button {
+    float: right;
+    background-color: #3b3;
+  }
+
+  nav {
+    display: none;
+    clear: both;
+    float: left;
+  }
+
   nav ul {
     margin: 20px auto 0px auto;
     padding: 0px;
@@ -19,7 +45,7 @@
   }
 
   nav li:last-child {
-    display: block;
+    display: none;
     margin: auto;
     margin-top: 20px;
   }

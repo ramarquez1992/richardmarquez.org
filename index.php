@@ -79,6 +79,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header>
       <div class="container">
         <h1 id="title"><a href="index.php">Richard Marquez</a></h1>
+
+        <div id="mobile-buttons">
+          <a id="contact-button" class="button" href="#contact">Contact</a>
+          <div id="menu-button" class="button">Menu</div>
+        </div>
+
         <nav>
           <ul>
             <li><a href="https://github.com/richard92m">Code</a></li>

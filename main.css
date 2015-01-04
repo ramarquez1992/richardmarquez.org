@@ -350,3 +350,7 @@ footer .links {
   margin-left: 100px;
 }
 
+#mobile-buttons {
+  display: none;
+}
+
