@@ -18,9 +18,12 @@ em {
 }
 
 a, a:visited {
+  opacity: 0.8;
 }
 
-a:hover, a:focus, a:active  {
+a.button, a:hover, a:focus, a:active  {
+  text-decoration: none;
+  opacity: 1;
 }
 
 .skills li, .button, a.button {
@@ -70,6 +73,11 @@ header {
 header h1#title {
   float: left;
   font-size: 2.2em;
+}
+
+header h1#title a {
+  text-decoration: none;
+  color: #000;
 }
 
 nav ul {

@@ -78,11 +78,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ?>
     <header>
       <div class="container">
-        <h1 id="title">Richard Marquez</h1>
+        <h1 id="title"><a href="index.php">Richard Marquez</a></h1>
         <nav>
           <ul>
             <li><a href="https://github.com/richard92m">Code</a></li>
-            <li><a href="http://scriptogr.am/richard92m/archive">Writings</a></li>
+            <!--<li><a href="http://scriptogr.am/richard92m/archive">Writings</a></li>-->
+            <li><a href="http://richard92m.calepin.co">Writings</a></li>
             <li><a href="http://careers.stackoverflow.com/richard92m">R&eacute;sum&eacute;</a></li>
             <li><a class="button" href="#contact">Contact</a></li>
           </ul>
@@ -126,8 +127,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <ul class="skills">
           <li>iOS</li>
           <li>Swift</li>
+          <li>PHP</li>
           <li>Backend</li>
-          <li>Parse</li>
         </ul>
 
         <div class="blurb">
@@ -145,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           </p>
         </div>
 
-        <a href="https://itunes.apple.com/us/app/winona-state-upac/id944827063" target="_blank">
+        <a href="https://itunes.apple.com/us/app/winona-state-upac/id944827063">
         <img class="badge" src="resources/app_store_badge.png" alt="See on App Store" />
         </a>
 
@@ -203,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           I am currently developing for the iOS platform to be released in Q2 of 2015.
         </p>
 
-        <a href="https://github.com/richard92m/three.bar" target="_blank">
+        <a href="https://github.com/richard92m/three.bar">
         <img class="badge" src="resources/github_badge.png" alt="See on GitHub" />
         </a>
 

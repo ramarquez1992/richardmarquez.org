@@ -1,5 +1,6 @@
 window.onload = function() {
-  contactFormInit()
+  contactFormInit();
+  addLinkTargets('_blank');
 }
 
 function contactFormInit() {
@@ -23,3 +24,13 @@ function inputInit(input, value) {
     }
   });
 }
+
+function addLinkTargets(target) {
+  $('a').each(function() {
+    if ($(this).attr('href') != '#contact' && $(this).attr('href') != 'index.php') {
+
+      $(this).attr('target', target);
+    }
+  });
+}
+
