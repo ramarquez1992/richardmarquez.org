@@ -316,10 +316,12 @@ ul.social-media img:hover {
 .contact form input, .contact form textarea {
   display: block;
   margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #aaa;
   color: #666;
   font-size: 1.3em;
-  border: 1px solid #aaa;
-  padding: 10px;
+	font-family: calibri,helvetica-neue,helvetica,arial,sans-serif;
+  font-weight: normal;
 }
 
 .contact form input {
