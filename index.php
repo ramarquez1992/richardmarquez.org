@@ -59,23 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="main.js"></script>
   </head>
   <body>
-    <?php
-      if ($error != '') {
-        ?>
-        <p class="form-alert red-alert">
-          <?=$error;?>
-        </p>
-        <?php
-      }
-
-      if ($success != '') {
-        ?>
-        <p class="form-alert green-alert">
-          <?=$success;?>
-        </p>
-        <?php
-      }
-    ?>
     <header>
       <div class="container">
         <h1 id="title"><a href="index.php">Richard Marquez</a></h1>
@@ -221,6 +204,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     <section id="contact" class="contact gray grid">
+      <?php
+        if ($error != '') {
+          ?>
+          <p class="form-alert red-alert">
+            <?=$error;?>
+          </p>
+          <?php
+        }
+
+        if ($success != '') {
+          ?>
+          <p class="form-alert green-alert">
+            <?=$success;?>
+          </p>
+          <?php
+        }
+      ?>
       <div class="container">
         <h2>Get in Touch</h2>
         <h3><img src="resources/available.png" alt="Available" /> Available Now</h3>
@@ -240,7 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           </ul>
         </div>
 
-        <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+        <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact">
 
           <input type="text" id="contact-name" name="name" value="<?php
             if (isset($_POST['name']) && $success == '') {
