@@ -40,6 +40,10 @@ a.button, a:hover, a:focus, a:active  {
   text-decoration: none;
 }
 
+.skills li {
+  cursor: crosshair;
+}
+
 .clear {
   clear: both;
 }
@@ -260,11 +264,15 @@ ul.social-media img:hover {
 }
 
 .contact {
-  position: relative;  /* necessary for form-alert positioning */
+  padding-top: 0;  /* necessary for form-alert positioning */
 }
 
 .contact h2, .contact h3 {
   text-align: center;
+}
+
+.contact h2 {
+  padding-top: 75px;
 }
 
 .contact h3 {
@@ -298,9 +306,6 @@ ul.social-media img:hover {
 }
 
 .form-alert {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   text-align: center;
   font-size: 1.2em;
