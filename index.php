@@ -147,6 +147,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <section class="work">
       <div class="container">
         <div class="pic">
+          <img src="resources/portfolio/hof.png" alt="Hall of Fame" />
+        </div>
+
+        <h2>Itechra Hall of Fame System</h2>
+
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Touchscreen</li>
+        </ul>
+
+        <div class="blurb">
+          <p>
+            A sports hall of fame system developed for <a href="http://itechra.com">Itechra</a>.
+            Designed primarily for public use on large touchscreen monitors, system
+            allows for browsing and search of an institution's hall of fame, team rosters,
+            schedules, news and events.
+          </p>
+          <p>
+            Along with the system and design elements I developed the front-end with HTML5,
+            CSS3, JavaScript and jQuery.
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <div class="pic">
           <img src="resources/portfolio/miller.png" alt="Miller Ingenuity" />
         </div>
 
