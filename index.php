@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <ul>
             <li><a href="https://github.com/richard92m">Code</a></li>
             <!--<li><a href="http://scriptogr.am/richard92m/archive">Writings</a></li>-->
-            <li><a href="http://richard92m.calepin.co">Writings</a></li>
+            <!--<li><a href="http://richard92m.calepin.co">Writings</a></li>-->
             <li><a href="http://careers.stackoverflow.com/richard92m">R&eacute;sum&eacute;</a></li>
             <li><a class="button" href="#contact">Contact</a></li>
           </ul>
@@ -204,6 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </section>
 
+    <!--
     <section class="work">
       <div class="container">
         <div class="pic">
@@ -232,6 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="clear"></div>
       </div>
     </section>
+    -->
 
 
     <section id="contact" class="contact gray grid">
