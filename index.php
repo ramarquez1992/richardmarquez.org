@@ -61,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <header>
       <div class="container">
-        <h1 id="title"><a href="index.php">Richard Marquez</a></h1>
+        <!--<h1 id="title"><a href="index.php">&lt;Richard Marquez&gt;</a></h1>-->
+        <h1 id="title"><a href="index.php">[ Richard Marquez ]</a></h1>
 
         <div id="mobile-buttons">
           <a id="contact-button" class="button" href="#contact">Contact</a>
@@ -99,12 +100,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
 
         <p class="blurb">
-          Hi, my name is Richard Marquez and I'm a full-stack software developer
-          and designer. Below, you can check out some of the products that I've shipped.
-          Feel free to <a href="#contact">get in touch</a>!
+          Hi, my name is Richard Marquez. Full-stack software developer by trade, I'm an insatiable learner and tinkerer; whether it be programming or web design, networking or electrical engineering, you can’t keep my hands away from it. Prior service as a United States Marine, I know how to get things done.
         </p>
       </div>
     </section>
+
+    <div class="sec-head vertical light-gray">
+      <div class="container">
+        <h2>*Selected Works</h2>
+      </div>
+    </div>
 
     <section class="work">
       <div class="container">
@@ -255,7 +260,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
       ?>
       <div class="container">
-        <h2>Get in Touch</h2>
+        <h2>*Get in Touch</h2>
         <h3><img src="resources/available.png" alt="Available" /> Available Now</h3>
 
         <div class="info">
