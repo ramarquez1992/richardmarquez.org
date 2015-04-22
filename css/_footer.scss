@@ -1,0 +1,15 @@
+footer {
+    padding: 15px 0px;
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    text-transform: lowercase;
+    
+    em {
+        text-transform: uppercase;
+    }
+    
+    .links {
+        margin-left: 100px;
+    }
+}

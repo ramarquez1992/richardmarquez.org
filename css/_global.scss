@@ -1,0 +1,163 @@
+$font-stack: calibri,helvetica-neue,helvetica,arial,sans-serif;
+
+* {
+    /*transition-duration: .1s;*/
+}
+
+html * {
+    margin: 0;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: medium;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+a, a:visited {
+    opacity: 0.8;
+}
+
+a.button, a:hover, a:focus, a:active  {
+    text-decoration: none;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+p {
+}
+
+.blurb {
+    line-height: 1.3em;
+    font-size: 1.1em;
+    text-align: justify;
+    
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+section {
+    padding: 75px 0px;
+    color: #333;
+    
+    h2 {
+        margin-bottom: 25px;
+    }
+}
+
+ul.social-media {
+    list-style-type: none;
+    
+    li {
+        display: inline-block;
+    }
+    
+    img {
+        width: 30px;
+        margin-right: 2px;
+        opacity: 0.8;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+}
+
+.button {
+        padding: 8px 25px;
+        background-color: #f06;
+        background-color: #75d;
+        font-weight: bold;
+        box-shadow: 2px 2px 0px #003;
+        color: #fff;
+}
+
+.button:hover {
+        background-color: #3b3;
+        text-decoration: none;
+}
+
+input.button {
+    width: 150px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.form-alert {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 0px;
+    text-transform: lowercase;
+}
+
+.green-alert {
+    border-top: 1px solid #383;
+    border-bottom: 1px solid #383;
+    background-color: #afa;
+    color: #383;
+}
+
+.red-alert {
+    border-top: 1px solid #c33;
+    border-bottom: 1px solid #c33;
+    background-color: #faa;
+    color: #c33;
+}
+
+.clear {
+    clear: both;
+}
+
+.grid {
+    background-image: url("resources/backgrounds/grid.png");
+}
+
+.horizontal {
+    background-image: url("resources/backgrounds/horizontal.png");
+}
+
+.dashed {
+    background-image: url("resources/backgrounds/dashed.png");
+}
+
+.vertical {
+    background-image: url("resources/backgrounds/vertical.png");
+}
+
+.purple {
+    background-color: #339;
+}
+
+.green {
+    background-color: #0f9712;
+}
+
+.aqua {
+    background-color: #0da47f;
+}
+
+.blue {
+    background-color: #3456c4;
+}
+
+.gray {
+    background-color: #e3e3e3;
+    color: #333;
+}
+
+.light-gray {
+    background-color: #fafafa;
+    color: #333;
+}

@@ -1,144 +1,145 @@
 @media (max-width: 1050px) {
-  .container {
-    width: 90%;
-    margin: auto;
-  }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
 
-  header h1#title {
-    float: none;
-    text-align: center;
-    font-size: 1.7em;
-    margin-bottom: 0px;
-  }
+    header h1#title {
+        float: none;
+        text-align: center;
+        font-size: 1.7em;
+        margin-bottom: 0px;
+    }
 
-  #mobile-buttons {
-    display: block;
-    margin: 2em auto 0px auto;
-    text-align: center;
-  }
+    #mobile-buttons {
+        display: block;
+        margin: 2em auto 0px auto;
+        text-align: center;
+    }
 
-  #menu-button {
-    float: left;
-    cursor: pointer;
-  }
+    #menu-button {
+        float: left;
+        cursor: pointer;
+    }
 
-  #menu-button:hover {
-    background-color: #75d;
-  }
+    #menu-button:hover {
+        background-color: #75d;
+    }
 
-  #contact-button {
-    float: right;
-    background-color: #3b3;
-  }
+    #contact-button {
+        float: right;
+        background-color: #3b3;
+    }
 
-  nav {
-    display: none;
-    clear: both;
-    float: left;
-  }
+    nav {
+        display: none;
+        clear: both;
+        float: left;
+        
+        ul {
+            margin: 20px auto 0px auto;
+            padding: 0px;
+            float: none;
+            text-align: center;
+            
+            li:last-child {
+                display: none;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+    }
 
-  nav ul {
-    margin: 20px auto 0px auto;
-    padding: 0px;
-    float: none;
-    text-align: center;
-  }
+    section {
+        padding: 30px 0px;
+        
+        h2 {
+            text-align: center;
+        }
+    }
 
-  nav li:last-child {
-    display: none;
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  section {
-    padding: 30px 0px;
-  }
-
-  section h2 {
-    text-align: center;
-  }
-
-  ul.social-media img {
+    ul.social-media img {
     opacity: 1;
-  }
+    }
 
-  .blurb {
+    .blurb {
     text-align: justify;
-  }
+    }
 
-  .about .blurb {
+    .about .blurb {
     width: 100%;
     font-size: 1.1em;
-  }
+    }
 
-  .skills li, .button {
+    .skills li, .button {
     margin-bottom: 10px;
-  }
+    }
 
-  .work .pic {
-    float: none;
-    width: 90%;
-    text-align: center;
-    margin: 0px auto 30px auto;
-  }
+    .work {
+        .pic {
+            float: none;
+            width: 90%;
+            text-align: center;
+            margin: 0px auto 30px auto;
+        
+            img {
+                max-width: 320px;;
+            }
+        }
 
-  .work .pic img {
-    max-width: 320px;;
-  }
+        ul.skills {
+            text-align: center;
+        }
 
-  .work ul.skills {
-    text-align: center;
-  }
+        .badge {
+            display: block;
+            width: 250px;
+            margin: 30px auto 0px auto;
+            opacity: 1;
+        }
+    }
+    
+    .contact {
+        h2 {
+            padding-top: 25px;
+        }
 
-  .work .badge {
-    display: block;
-    width: 250px;
-    margin: 30px auto 0px auto;
-    opacity: 1;
-  }
+        h3 {
+            margin-bottom: 30px;
+        }
 
-  .contact h2 {
-    padding-top: 25px;
-  }
+        .info {
+            float: none;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+            
+            ul {
+                text-align: center;
+            }
+        }
 
-  .contact h3 {
-    margin-bottom: 30px;
-  }
+        .gravatar {
+            display: none;
+        }
 
-  .contact .info {
-    float: none;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .contact .gravatar {
-    display: none;
-  }
-
-  .contact .info ul {
-    text-align: center;
-  }
-
-  .contact form {
-  }
-
-  .contact form input, .contact form textarea {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  input.button {
+        form {
+            input, textarea {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    input.button {
     margin: auto;
     -webkit-appearance: none;
-  }
+    }
 
-  footer .links {
+    footer .links {
     display: block;
     margin-left: 0px;
-  }
-
-
+    }
 }

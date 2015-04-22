@@ -1,0 +1,40 @@
+.about {
+    img.gravatar {
+        display: block;
+        margin: auto;
+        width: 150px;
+        border: 2px solid #e3e3e3;
+        box-shadow: 7px 7px 0px #bbb;
+    }
+
+    ul.social-media {
+        text-align: center;
+        margin-top: 37px;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .info {
+        display: none;
+        margin: auto;
+        width: 175px;
+        color: #ddd;
+        font-size: 1em;
+        
+        img {
+            margin-right: 10px;
+        }
+
+        a {
+            color: #ddd;
+        }
+    }
+
+    .blurb {
+        margin: 30px auto;
+        width: 55%;
+        line-height: 1.4;
+        font-size: 1.2em;
+        text-align: justify;
+    }
+}

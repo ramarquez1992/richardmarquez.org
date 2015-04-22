@@ -1,7 +1,10 @@
 @media (min-width: 1050px) {
-  .container {
-    width: 900px;
-    margin: auto;
-  }
+    .container {
+        width: 900px;
+        margin: auto;
+    }
 
+    #mobile-buttons {
+        display: none;
+    }
 }
