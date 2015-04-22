@@ -1,5 +1,6 @@
 window.onload = function() {
   addLinkTargets('_blank');
+  //animate();
 }
 
 function addLinkTargets(target) {
@@ -8,5 +9,11 @@ function addLinkTargets(target) {
 
       $(this).attr('target', target);
     }
+  });
+}
+
+function animate() {
+  $('#diamond').animo( { animation: ['tada', 'bounce'], duration: 1 }, function() {
+    $('#diamond').animo( { animation: 'bounceInRight', duration: 1 } );
   });
 }

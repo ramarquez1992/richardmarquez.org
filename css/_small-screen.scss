@@ -4,11 +4,57 @@
         margin: auto;
     }
 
-    header h1#title {
-        float: none;
-        text-align: center;
-        font-size: 1.7em;
-        margin-bottom: 0px;
+    .lab {
+        height: 300px;
+    }
+    
+    header {
+        padding-bottom: 0;
+        position: static;
+        
+        h1#title {
+            float: none;
+            text-align: center;
+            //font-size: 1.em;
+            //margin-bottom: 0px;
+            margin: 0 auto;
+        }
+    
+        nav {
+            margin-top: .5em;
+            display: block;
+            background-color: $light-gray;
+            padding: 0;
+            
+            ul {
+                padding: 0;
+                
+                li {
+                    width: 30%;
+                    margin: 0;
+                    padding: .2em 0;
+                    text-align: center;
+                    border-right: 1px solid $gray;
+                }
+                
+                li:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        
+        .social-media {
+            display: block;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+ 
+            
+            img {
+                opacity: 1;
+                width: 1.7em;
+            }
+        }
     }
 
     section {
@@ -19,33 +65,25 @@
         }
     }
 
-    ul.social-media img {
-        opacity: 1;
-    }
-
     .blurb {
-        text-align: justify;
+        text-align: center;
     }
 
-    .about .blurb {
-        width: 100%;
-        font-size: 1.1em;
-    }
-
-    .skills li, .button {
-        margin-bottom: 10px;
+    .about {
+        .blurb {
+            width: 100%;
+            font-size: 1.1em;
+        }
     }
 
     .work {
-        .pic {
+        img {
+            display: block;
             float: none;
-            width: 90%;
+            width: 70%;
             text-align: center;
             margin: 0px auto 30px auto;
-        
-            img {
-                max-width: 320px;;
-            }
+            max-width: 320px;;
         }
 
         ul.skills {

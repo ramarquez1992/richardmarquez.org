@@ -24,35 +24,11 @@
         color: #000;
     }
 
-    .pic {
+    img {
         float: right;
         width: 40%;
         margin-left: 10%;
         margin-bottom: 20px;
-        
-        img {
-            width: 100%;
-        }
-    }
-
-    ul.skills {
-        display: none;
-        padding: 0;
-        list-style-type: none;
-        margin-bottom: 40px;
-        
-        li {
-            @extend .button;
-            display: inline-block;
-            margin-right: 5px;
-            text-transform: lowercase;
-            cursor: crosshair;
-        }
-        
-        
-        li:hover {
-            @extend .button:hover;
-        }
     }
 
     .badge {

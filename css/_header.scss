@@ -4,7 +4,7 @@ header {
     @extend .gray;
     border-bottom: 1px solid $light-gray;
     padding: .5em 0;
-    
+    position: relative;
     
     h1#title {
         float: left;
@@ -42,7 +42,8 @@ header {
     }
     
     ul.social-media {
-        float: right;
-        margin-right: $x-margin;
+        position: absolute;
+        top: .5em;
+        right: 1em;
     }
 }
