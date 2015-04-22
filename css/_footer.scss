@@ -1,7 +1,6 @@
 footer {
+    @extend .gray;
     padding: 15px 0px;
-    background-color: #ccc;
-    color: #333;
     text-align: center;
     text-transform: lowercase;
     

@@ -1,4 +1,9 @@
 $font-stack: calibri,helvetica-neue,helvetica,arial,sans-serif;
+$gray: #e3e3e3;
+$light-gray: #d3d3d3;
+$primary-color: #75d;
+$secondary-color: #3b3;
+$tertiary-color: #f06;
 
 * {
     /*transition-duration: .1s;*/
@@ -61,7 +66,7 @@ ul.social-media {
     }
     
     img {
-        width: 30px;
+        width: 1.3em;
         margin-right: 2px;
         opacity: 0.8;
     }
@@ -71,17 +76,24 @@ ul.social-media {
     }
 }
 
+img.gravatar {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border: 2px solid $gray;
+    box-shadow: 7px 7px 0px #bbb;
+}
+    
 .button {
         padding: 8px 25px;
-        background-color: #f06;
-        background-color: #75d;
+        background-color: $primary-color;
         font-weight: bold;
         box-shadow: 2px 2px 0px #003;
         color: #fff;
 }
 
 .button:hover {
-        background-color: #3b3;
+        background-color: $secondary-color;
         text-decoration: none;
 }
 
@@ -130,7 +142,7 @@ input.button {
 }
 
 .gray {
-    background-color: #e3e3e3;
+    background-color: $gray;
     color: #333;
 }
 

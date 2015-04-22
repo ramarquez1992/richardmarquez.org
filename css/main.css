@@ -95,15 +95,21 @@ ul.social-media {
   ul.social-media li {
     display: inline-block; }
   ul.social-media img {
-    width: 30px;
+    width: 1.3em;
     margin-right: 2px;
     opacity: 0.8; }
   ul.social-media img:hover {
     opacity: 1; }
 
+img.gravatar {
+  display: block;
+  margin: auto;
+  width: 150px;
+  border: 2px solid #e3e3e3;
+  box-shadow: 7px 7px 0px #bbb; }
+
 .button, .skills li {
   padding: 8px 25px;
-  background-color: #f06;
   background-color: #75d;
   font-weight: bold;
   box-shadow: 2px 2px 0px #003;
@@ -138,7 +144,7 @@ input.button {
 .purple {
   background-color: #339; }
 
-.green {
+.green, .lab {
   background-color: #0f9712; }
 
 .aqua {
@@ -147,7 +153,7 @@ input.button {
 .blue {
   background-color: #3456c4; }
 
-.gray {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -156,33 +162,36 @@ input.button {
   color: #333; }
 
 header {
-  background-color: #333;
-  background-color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  border-bottom: 1px solid #d3d3d3;
+  padding-top: .5em;
+  padding-bottom: .5em; }
   header h1#title {
     float: left;
-    font-size: 2.2em; }
+    margin-left: 2em;
+    font-size: 1.2em;
+    text-transform: uppercase; }
     header h1#title a {
       text-decoration: none;
       color: #000; }
-  header nav ul {
-    list-style-type: none;
+  header nav {
+    font-size: 1.1em;
+    text-transform: lowercase; }
+    header nav ul {
+      list-style-type: none; }
+    header nav li {
+      display: inline-block;
+      margin-left: 1em; }
+    header nav a {
+      color: #000;
+      text-decoration: none; }
+    header nav a:hover {
+      text-decoration: underline; }
+  header ul.social-media {
     float: right;
-    margin: 10px 40px; }
-  header nav li {
-    display: inline-block;
-    width: 80px; }
-  header nav a {
-    color: #000;
-    text-decoration: none; }
-  header nav a:hover {
-    text-decoration: underline; }
+    margin-right: 2em; }
 
 footer {
   padding: 15px 0px;
-  background-color: #ccc;
-  color: #333;
   text-align: center;
   text-transform: lowercase; }
   footer em {
@@ -190,17 +199,6 @@ footer {
   footer .links {
     margin-left: 100px; }
 
-.about img.gravatar {
-  display: block;
-  margin: auto;
-  width: 150px;
-  border: 2px solid #e3e3e3;
-  box-shadow: 7px 7px 0px #bbb; }
-.about ul.social-media {
-  text-align: center;
-  margin-top: 37px;
-  margin-bottom: 15px;
-  padding: 0; }
 .about .info {
   display: none;
   margin: auto;
@@ -211,18 +209,18 @@ footer {
     margin-right: 10px; }
   .about .info a {
     color: #ddd; }
-.about .blurb {
+.about p.blurb {
   margin: 30px auto;
-  width: 55%;
-  line-height: 1.4;
+  width: 50%;
+  line-height: 1.5;
   font-size: 1.2em;
-  text-align: justify; }
+  text-align: center; }
 
 .skills li {
   cursor: crosshair; }
 
 .work {
-  border-bottom: 1px solid #e3e3e3; }
+  border-bottom: 1px solid #d3d3d3; }
   .work .blurb {
     color: #000; }
   .work .pic {
