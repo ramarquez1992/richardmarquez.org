@@ -325,7 +325,7 @@ footer {
         header nav ul li:last-child {
           border-right: none; }
     header .social-media {
-      display: block;
+      display: none;
       position: absolute;
       padding: 0;
       margin: 0; }
@@ -352,8 +352,6 @@ footer {
     text-align: center;
     margin: 0px auto 30px auto;
     max-width: 320px; }
-  .work ul.skills {
-    text-align: center; }
   .work .badge {
     display: block;
     width: 250px;
