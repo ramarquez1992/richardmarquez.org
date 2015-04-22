@@ -1,10 +1,7 @@
 @media (min-width: 1050px) {
   .container {
     width: 900px;
-    margin: auto; }
-
-  #mobile-buttons {
-    display: none; } }
+    margin: auto; } }
 @media (max-width: 1050px) {
   .container {
     width: 90%;
@@ -15,36 +12,6 @@
     text-align: center;
     font-size: 1.7em;
     margin-bottom: 0px; }
-
-  #mobile-buttons {
-    display: block;
-    margin: 2em auto 0px auto;
-    text-align: center; }
-
-  #menu-button {
-    float: left;
-    cursor: pointer; }
-
-  #menu-button:hover {
-    background-color: #75d; }
-
-  #contact-button {
-    float: right;
-    background-color: #3b3; }
-
-  nav {
-    display: none;
-    clear: both;
-    float: left; }
-    nav ul {
-      margin: 20px auto 0px auto;
-      padding: 0px;
-      float: none;
-      text-align: center; }
-      nav ul li:last-child {
-        display: none;
-        margin: auto;
-        margin-top: 20px; }
 
   section {
     padding: 30px 0px; }
@@ -78,25 +45,6 @@
     width: 250px;
     margin: 30px auto 0px auto;
     opacity: 1; }
-
-  .contact h2 {
-    padding-top: 25px; }
-  .contact h3 {
-    margin-bottom: 30px; }
-  .contact .info {
-    float: none;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 50px;
-    text-align: center; }
-    .contact .info ul {
-      text-align: center; }
-  .contact .gravatar {
-    display: none; }
-  .contact form input, .contact form textarea {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px; }
 
   input.button {
     margin: auto;
@@ -171,26 +119,6 @@ input.button {
   border-radius: 0px !important;
   color: #fff !important;
   cursor: pointer; }
-
-.form-alert {
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 15px 0px;
-  text-transform: lowercase; }
-
-.green-alert {
-  border-top: 1px solid #383;
-  border-bottom: 1px solid #383;
-  background-color: #afa;
-  color: #383; }
-
-.red-alert {
-  border-top: 1px solid #c33;
-  border-bottom: 1px solid #c33;
-  background-color: #faa;
-  color: #c33; }
 
 .clear {
   clear: both; }
@@ -318,46 +246,5 @@ footer {
     opacity: 0.7; }
   .work .badge:hover {
     opacity: 1; }
-
-.contact {
-  padding-top: 0;
-  /* necessary for form-alert positioning */ }
-  .contact h2, .contact h3 {
-    text-align: center; }
-  .contact h2 {
-    padding-top: 75px;
-    text-transform: lowercase; }
-  .contact h3 {
-    margin-top: -20px;
-    margin-bottom: 75px;
-    color: #93b37f; }
-  .contact .gravatar {
-    width: 80px;
-    border: 1px solid #888; }
-  .contact .info {
-    width: 40%;
-    float: right; }
-    .contact .info h4 {
-      display: inline; }
-    .contact .info ul {
-      list-style-type: none;
-      padding: 0px;
-      margin-top: 30px; }
-      .contact .info ul li:last-child {
-        margin-top: 1em; }
-  .contact form input, .contact form textarea {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #aaa;
-    color: #666;
-    font-size: 1.3em;
-    font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
-    font-weight: normal; }
-  .contact form input {
-    width: 30%; }
-  .contact form textarea {
-    width: 40%;
-    height: 200px; }
 
 /*# sourceMappingURL=main.css.map */

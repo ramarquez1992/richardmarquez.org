@@ -93,29 +93,6 @@ input.button {
     cursor: pointer;
 }
 
-.form-alert {
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 15px 0px;
-    text-transform: lowercase;
-}
-
-.green-alert {
-    border-top: 1px solid #383;
-    border-bottom: 1px solid #383;
-    background-color: #afa;
-    color: #383;
-}
-
-.red-alert {
-    border-top: 1px solid #c33;
-    border-bottom: 1px solid #c33;
-    background-color: #faa;
-    color: #c33;
-}
-
 .clear {
     clear: both;
 }
