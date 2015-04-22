@@ -31,7 +31,7 @@
     width: 100%;
     font-size: 1.1em; }
 
-  .skills li, .button, .skills li {
+  .skills li, .button, .work ul.skills li {
     margin-bottom: 10px; }
 
   .work .pic {
@@ -82,8 +82,7 @@ h2 {
 
 .blurb {
   line-height: 1.3em;
-  font-size: 1em;
-  text-align: justify; }
+  font-size: 1em; }
   .blurb p {
     margin-bottom: 15px; }
 
@@ -111,14 +110,14 @@ img.gravatar {
   border: 2px solid #e3e3e3;
   box-shadow: 7px 7px 0px #bbb; }
 
-.button, .skills li {
+.button, .work ul.skills li {
   padding: 8px 25px;
   background-color: #75d;
   font-weight: bold;
   box-shadow: 2px 2px 0px #003;
   color: #fff; }
 
-.button:hover, .skills li:hover {
+.button:hover, .work ul.skills li:hover {
   background-color: #3b3;
   text-decoration: none; }
 
@@ -164,8 +163,9 @@ input.button {
   background-color: #fafafa;
   color: #333; }
 
-.diamond {
+#diamond {
   margin: auto;
+  margin-bottom: 3em;
   width: 0;
   height: 0;
   border: 25px solid transparent;
@@ -173,7 +173,7 @@ input.button {
   position: relative;
   top: -25px; }
 
-.diamond:after {
+#diamond:after {
   content: '';
   position: absolute;
   left: -25px;
@@ -222,6 +222,7 @@ footer {
     margin-left: 100px; }
 
 .lab {
+  display: none;
   background-color: #000; }
 
 .about .info {
@@ -234,18 +235,26 @@ footer {
     margin-right: 10px; }
   .about .info a {
     color: #ddd; }
-.about p.blurb {
+.about .blurb {
   margin: 30px auto;
   width: 50%;
   line-height: 1.4;
   font-size: 1.1em;
-  text-align: justify; }
-
-.skills li {
-  cursor: crosshair; }
+  text-align: left; }
 
 .work {
-  border-bottom: 1px solid #d3d3d3; }
+  border-bottom: 1px solid #d3d3d3;
+  text-align: right; }
+  .work h2 {
+    font-size: 1.5em;
+    text-transform: uppercase; }
+    .work h2 a {
+      text-decoration: none;
+      color: #000; }
+  .work h2:before {
+    content: '[ '; }
+  .work h2:after {
+    content: ' ]'; }
   .work .blurb {
     color: #000; }
   .work .pic {
@@ -256,13 +265,15 @@ footer {
     .work .pic img {
       width: 100%; }
   .work ul.skills {
+    display: none;
     padding: 0;
     list-style-type: none;
     margin-bottom: 40px; }
     .work ul.skills li {
       display: inline-block;
       margin-right: 5px;
-      text-transform: lowercase; }
+      text-transform: lowercase;
+      cursor: crosshair; }
   .work .badge {
     width: 150px;
     margin-top: 80px;

@@ -1,19 +1,24 @@
-.skills {
-    li {
-        @extend .button
-    }
-
-    li:hover {
-        @extend .button:hover;
-    }
-
-    li {
-        cursor: crosshair;
-    }
-}
-
 .work {
     border-bottom: 1px solid $light-gray;
+    text-align: right;
+    
+    h2 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+        
+    h2:before {
+        content: '[ ';
+	}
+	
+    h2:after {
+        content: ' ]';
+	}
     
     .blurb {
         color: #000;
@@ -31,14 +36,22 @@
     }
 
     ul.skills {
+        display: none;
         padding: 0;
         list-style-type: none;
         margin-bottom: 40px;
         
         li {
+            @extend .button;
             display: inline-block;
             margin-right: 5px;
             text-transform: lowercase;
+            cursor: crosshair;
+        }
+        
+        
+        li:hover {
+            @extend .button:hover;
         }
     }
 

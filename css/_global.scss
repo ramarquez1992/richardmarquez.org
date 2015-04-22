@@ -42,7 +42,6 @@ p {
 .blurb {
     line-height: 1.3em;
     font-size: 1em;
-    text-align: justify;
     
     p {
         margin-bottom: 15px;
@@ -151,8 +150,9 @@ input.button {
     color: #333;
 }
 
-.diamond {
+#diamond {
     margin: auto;
+    margin-bottom: 3em;
 	width: 0;
 	height: 0;
 	border: 25px solid transparent;
@@ -161,7 +161,7 @@ input.button {
 	top: -25px;
 }
 
-.diamond:after {
+#diamond:after {
 	content: '';
 	position: absolute;
 	left: -25px; top: 10px;
