@@ -3,14 +3,13 @@ $x-margin: 2em;
 header {
     @extend .gray;
     border-bottom: 1px solid $light-gray;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em 0;
     
     
     h1#title {
         float: left;
         margin-left: $x-margin;
-        font-size: 1.2em; 
+        font-size: 1em; 
         text-transform: uppercase;         
         
         a {
@@ -20,7 +19,7 @@ header {
     }
 
     nav {
-        font-size: 1.1em;
+        font-size: 1em;
         text-transform: lowercase;
         
         ul {

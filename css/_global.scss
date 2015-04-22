@@ -41,7 +41,7 @@ p {
 
 .blurb {
     line-height: 1.3em;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: justify;
     
     p {
@@ -66,7 +66,7 @@ ul.social-media {
     }
     
     img {
-        width: 1.3em;
+        width: 1.1em;
         margin-right: 2px;
         opacity: 0.8;
     }
@@ -149,4 +149,24 @@ input.button {
 .light-gray {
     background-color: #fafafa;
     color: #333;
+}
+
+.diamond {
+    margin: auto;
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-bottom: 10px solid $tertiary-color;
+	position: relative;
+	top: -25px;
+}
+
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -25px; top: 10px;
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-top: 35px solid $tertiary-color;
 }
