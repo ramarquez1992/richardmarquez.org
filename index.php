@@ -49,9 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          (the "About" blurb in this case)
     <meta name="description" content="" />-->
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="small-screen.css" />
-    <link rel="stylesheet" type="text/css" href="large-screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" href="resources/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="resources/favicon.png" />
@@ -61,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <header>
       <div class="container">
-        <!--<h1 id="title"><a href="index.php">&lt;Richard Marquez&gt;</a></h1>-->
         <h1 id="title"><a href="index.php">[ Richard Marquez ]</a></h1>
 
         <div id="mobile-buttons">
@@ -84,8 +81,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <section class="about gray grid">
       <div class="container">
-        <img class="gravatar" src="resources/richardmarquez.jpg" alt="Gravatar" />
-
         <ul class="social-media">
           <li><a href="https://www.facebook.com/richard92m"><img alt="Facebook" src="resources/social_media/facebook.png" /></a></li>
           <li><a href="http://www.linkedin.com/pub/richard-marquez/84/927/733/"><img alt="LinkedIn" src="resources/social_media/linkedin.png" /></a></li>
