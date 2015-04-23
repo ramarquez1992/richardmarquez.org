@@ -70,7 +70,5 @@ function divideRect(rect) {
     topLeft.setAttributeNS(null,"height",subHeight);
     topLeft.setAttributeNS(null,"fill",getRandomColor());
         
-    var newSet = [ topRight, bottomRight, bottomLeft, topLeft ];
-    return newSet;
-    
+    return [ topRight, bottomRight, bottomLeft, topLeft ];
 }
