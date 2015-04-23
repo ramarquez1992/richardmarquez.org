@@ -6,7 +6,7 @@ function init() {
     getRandomWord(function(result) {
         getWord(result, function(result) {
             if (result) {
-                printWord(result);
+                print(result);
             } else {
                 init();  // Missing information, try again
             }
@@ -35,7 +35,7 @@ function getWord(query, completion) {
                 if (result) {
                     word.pronunciation = result;
             
-                    getExamples(query, function(result) {
+                    getExamples(query, 100, function(result) {
                         word.examples = result;
                 
                         completion(word);
@@ -53,7 +53,17 @@ function getDefinitions(query, completion) {
         var definitions = [];
 
         $.each(data, function(i, field) {
-            definitions.push(field);
+            var d = {
+                text: field.text
+            };
+            
+            if (field.partOfSpeech) {
+                d.partOfSpeech = field.partOfSpeech;
+            } else {
+                d.partOfSpeech = '~~';
+            }
+            
+            definitions.push(d);
         });
         
         if (definitions.length < 1) {
@@ -78,9 +88,8 @@ function getPronunciation(query, completion) {
     });    
 }
 
-function getExamples(query, completion) {
-    var limit = 2;
-    var wordnikApi = 'http://api.wordnik.com:80/v4/word.json/' + query + '/examples?includeDuplicates=false&useCanonical=true&skip=0&limit=' + limit + '&api_key=609d7e2de89407f36e0070939120cc2a51557b07029df0b1f';
+function getExamples(query, limit, completion) {
+    var wordnikApi = 'http://api.wordnik.com:80/v4/word.json/' + query + '/examples?includeDuplicates=false&useCanonical=false&skip=0&limit=' + limit + '&api_key=609d7e2de89407f36e0070939120cc2a51557b07029df0b1f';
 
     $.getJSON(wordnikApi, function(data) {
         var examples = [];
@@ -105,42 +114,48 @@ function getExamples(query, completion) {
     });   
 }
 
-function printWord(word) {
+function print(word) {
     document.title = word.name;
-    
-    printName(word.name);
-    printPronunciation(word.pronunciation);
-    printDefs(word.definitions);
+    printWord(word);
     printExamples(word.examples);
+    multiplyExamples(200);
+    highlightWord(word.name);
+    removeElementById('loading');
 }
 
-function printName(name) {
-    $('<div>')
+function printWord(word) {
+    var div = $('<div>')
+        .attr('id', 'word')
+        .appendTo('body');
+    
+    getNameHtml(word.name).appendTo(div);
+    getPronunciationHtml(word.pronunciation).appendTo(div);
+    getDefsHtml(word.definitions).appendTo(div);
+}
+
+function getNameHtml(name) {
+    return $('<div>')
         .addClass('name')
-        .text(name)
-        .appendTo('#word');
+        .text(name);
 }
 
-function printPronunciation(pronunciation) {
-    $('<div>')
+function getPronunciationHtml(pronunciation) {
+    return $('<div>')
         .addClass('pronunciation')
-        .text(pronunciation)
-        .appendTo('#word');
+        .text(pronunciation);
 }
 
-function printDefs(list) {
+function getDefsHtml(list) {
     var ul = $('<ul>')
-        .attr('id', 'definitions')
-        .appendTo('#word');
+        .attr('id', 'definitions');
             
     for (var i = 0; i < list.length; ++i) {
         var def = $('<li>')
-            .addClass('definition')
             .appendTo(ul);
             
         $('<span>')
             .addClass('num')
-            .text((i+1) + ') ')
+            .text(i + 1)
             .appendTo(def);
             
         $('<span>')
@@ -153,26 +168,47 @@ function printDefs(list) {
             .text(list[i].text)
             .appendTo(def);
     }
+    
+    return ul;
 }
 
 function printExamples(list) {
     var ul = $('<ul>')
         .attr('id', 'examples')
-        .appendTo('#word');
+        .appendTo('body');
             
     for (var i = 0; i < list.length; ++i) {
         var e = $('<li>')
             .appendTo(ul);
         
-        $('<span>')
+        $('<a>')
             .addClass('content')
+            .attr('href', list[i].url)
             .text(list[i].text)
             .appendTo(e);
-        
-        $('<a>')
-            .addClass('src')
-            .attr('href', list[i].url)
-            .text(list[i].src)
-            .appendTo(e);
     }
+}
+
+function multiplyExamples(times) {
+    var examplesDiv = document.getElementById("examples");
+    var examplesText = examplesDiv.innerHTML;
+    
+    var initialText = examplesText;
+    var initialCount = examplesDiv.children.length;
+    
+    for (var i = 0; i < (times - initialCount); i += initialCount) {        
+        examplesText += initialText;
+    }
+    
+    examplesDiv.innerHTML = examplesText;
+}
+
+function highlightWord(word) {
+    var examplesDiv = document.getElementById("examples");
+    var examplesText = examplesDiv.innerHTML;
+    
+    var regex = new RegExp('(' + word + ')', 'gi');
+    examplesText = examplesText.replace(regex, '<span style="color:' + getRandomColor() + ';" class="word">$1</span>');
+    
+    examplesDiv.innerHTML = examplesText;
 }
