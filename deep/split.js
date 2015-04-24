@@ -18,6 +18,8 @@ function splitAnimation() {
     rect.setAttributeNS(null,"height",svg.height());
     rect.setAttributeNS(null,"fill","#222");
     rect.onmouseover = function() { splitRect(this); };
+    rect.onmouseenter = function() { splitRect(this); };
+    rect.onmouseleave = function() { splitRect(this); };
 
     document.getElementById("deep").appendChild(rect);
 }
@@ -37,8 +39,10 @@ function divideRect(rect) {
  
     var oldX = rect.getAttribute("x");
     var oldY = rect.getAttribute("y");
-    var subWidth = Math.trunc(rect.getAttribute("width") / 2);
-    var subHeight = Math.trunc(rect.getAttribute("height") / 2);
+    //var subWidth = Math.trunc(rect.getAttribute("width") / 2);
+    //var subHeight = Math.trunc(rect.getAttribute("height") / 2);
+    var subWidth = (rect.getAttribute("width") / 2);
+    var subHeight = (rect.getAttribute("height") / 2);
     
     var topRight = document.createElementNS(svgNS,"rect");
     topRight.setAttributeNS(null,"x",+oldX + subWidth);
