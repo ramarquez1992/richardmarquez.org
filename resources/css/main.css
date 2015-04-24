@@ -121,13 +121,8 @@ footer {
   footer .links {
     margin-left: 100px; }
 
-iframe#lab {
-  width: 100%;
-  border: none;
-  scrolling: no;
-  overflow: hidden;
-  margin: 0;
-  padding: 0; }
+#deep {
+  width: 100%; }
 
 #diamond {
   margin: auto;
@@ -259,14 +254,14 @@ iframe#lab {
     width: 900px;
     margin: auto; }
 
-  iframe#lab {
+  #deep {
     height: 500px; } }
 @media (max-width: 1050px) {
   .container {
     width: 90%;
     margin: auto; }
 
-  iframe#lab {
+  #deep {
     height: 300px; }
 
   header {
