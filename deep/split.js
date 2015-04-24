@@ -8,9 +8,7 @@ $(document).ready(function() {
 });
 
 function splitAnimation() {
-    $('#lab').css('display', 'block');      // Only show if javascript is enabled
-
-    var svg = $('#lab'); 
+    var svg = $('#deep'); 
     var svgNS = "http://www.w3.org/2000/svg";
 
     var rect = document.createElementNS(svgNS,"rect");
@@ -21,14 +19,14 @@ function splitAnimation() {
     rect.setAttributeNS(null,"fill","#222");
     rect.onmouseover = function() { splitRect(this); };
 
-    document.getElementById("lab").appendChild(rect);
+    document.getElementById("deep").appendChild(rect);
 }
 
 function splitRect(rect) {    
     var newSet = divideRect(rect);
     for (var i = 0; i < newSet.length; ++i) {
         newSet[i].onmouseover = function() { splitRect(this); };
-        document.getElementById("lab").appendChild(newSet[i]);
+        document.getElementById("deep").appendChild(newSet[i]);
     }
     
     rect.parentNode.removeChild(rect);

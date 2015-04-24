@@ -83,7 +83,8 @@ input.button {
 header {
   border-bottom: 1px solid #d3d3d3;
   padding: .5em 0;
-  position: relative; }
+  position: relative;
+  margin-top: -10px; }
   header h1#title {
     float: left;
     margin-left: 2em;
@@ -120,13 +121,13 @@ footer {
   footer .links {
     margin-left: 100px; }
 
-#lab {
-  display: none;
-  position: relative;
+iframe#lab {
   width: 100%;
+  border: none;
+  scrolling: no;
+  overflow: hidden;
   margin: 0;
-  padding: 0;
-  background-color: #222; }
+  padding: 0; }
 
 #diamond {
   margin: auto;
@@ -228,14 +229,7 @@ footer {
   width: 40%;
   padding: 3%;
   min-height: 150px;
-  margin-bottom: 3em;
-    /*h2:before {
-        content: '[ ';
-	}
-	
-    h2:after {
-        content: ' ]';
-	}*/ }
+  margin-bottom: 3em; }
   .work img {
     z-index: 1000;
     display: none;
@@ -259,26 +253,20 @@ footer {
   .work .blurb {
     color: #000;
     font-size: .9em; }
-  .work .badge {
-    width: 150px;
-    margin-top: 80px;
-    opacity: 0.7; }
-  .work .badge:hover {
-    opacity: 1; }
 
 @media (min-width: 1050px) {
   .container {
     width: 900px;
     margin: auto; }
 
-  #lab {
-    height: 500px; } }
+  iframe#lab {
+    height: 400px; } }
 @media (max-width: 1050px) {
   .container {
     width: 90%;
     margin: auto; }
 
-  #lab {
+  iframe#lab {
     height: 300px; }
 
   header {

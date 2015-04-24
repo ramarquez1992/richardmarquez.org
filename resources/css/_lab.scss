@@ -1,8 +1,8 @@
-#lab {
-    display: none;
-    position: relative;
+iframe#lab {
     width: 100%;
+    border: none;
+    scrolling: no;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: #222;
 }
