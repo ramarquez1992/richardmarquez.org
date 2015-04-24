@@ -54,9 +54,21 @@
             }
         }
     }
+    
+    .work:nth-child(odd) {
+        margin-right: auto;
+    }
 
-    section {
-        padding: 30px 0px;
+    .work {
+        transition-duration: .3s;
+
+        //position: inherit;
+        float: none;
+        display: block;
+        width: 90%;
+        padding: 0;
+        margin: 0em auto 3em auto;
+        min-height: 0px;
         
         h2 {
             text-align: center;
@@ -71,24 +83,6 @@
         .blurb {
             width: 100%;
             font-size: 1.1em;
-        }
-    }
-
-    .work {
-        img {
-            display: block;
-            float: none;
-            width: 70%;
-            text-align: center;
-            margin: 0px auto 30px auto;
-            max-width: 320px;;
-        }
-
-        .badge {
-            display: block;
-            width: 250px;
-            margin: 30px auto 0px auto;
-            opacity: 1;
         }
     }
     

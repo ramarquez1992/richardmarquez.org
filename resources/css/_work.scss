@@ -3,7 +3,6 @@
     
     img {
         //display: block;
-        //width: 90%;
     }
 }
 
@@ -27,13 +26,13 @@
     
     img {
         z-index: 1000;
-        //display: none;
-        //position: absolute;
-        //bottom: -350px;
-        //right: 0px;
-        width: 0;
+        display: none;
+        position: absolute;
+        bottom: -350px;
+        right: 0px;
+        max-height: 350px;
         background-color: $gray;
-        //padding: 5px;
+        padding: 5px;
         margin: 0 auto 0 auto;
     }
     
