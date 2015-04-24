@@ -29,7 +29,6 @@ h2 {
     margin-bottom: 15px; }
 
 section {
-  padding: 75px 0px;
   color: #333; }
   section h2 {
     margin-bottom: 25px; }
@@ -73,7 +72,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer {
+.gray, header, footer, .work:hover {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -131,7 +130,7 @@ footer {
 
 #diamond {
   margin: auto;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   width: 0;
   height: 0;
   border: 25px solid transparent;
@@ -197,45 +196,64 @@ footer {
   -o-transform: rotate(-70deg);
   content: ''; }
 
-.about .info {
-  display: none;
-  margin: auto;
-  width: 175px;
-  color: #ddd;
-  font-size: 1em; }
-  .about .info img {
-    margin-right: 10px; }
-  .about .info a {
-    color: #ddd; }
-.about .blurb {
-  margin: 30px auto;
-  width: 50%;
-  line-height: 1.4;
-  font-size: 1.1em;
-  text-align: center; }
-.about .social-media {
-  display: none; }
+.about {
+  margin: 6em 0px; }
+  .about .info {
+    display: none;
+    margin: auto;
+    width: 175px;
+    color: #ddd;
+    font-size: 1em; }
+    .about .info img {
+      margin-right: 10px; }
+    .about .info a {
+      color: #ddd; }
+  .about .blurb {
+    margin: 30px auto;
+    width: 50%;
+    line-height: 1.4;
+    font-size: 1.1em;
+    text-align: center; }
+  .about .social-media {
+    display: none; }
+
+.work:nth-child(odd) {
+  margin-right: 5%; }
 
 .work {
-  border-bottom: 1px solid #d3d3d3;
-  text-align: right; }
+  transition-duration: .3s;
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 40%;
+  padding: 3%;
+  min-height: 150px;
+  margin-bottom: 3em;
+    /*h2:before {
+        content: '[ ';
+	}
+	
+    h2:after {
+        content: ' ]';
+	}*/ }
+  .work img {
+    z-index: 1000;
+    width: 0;
+    background-color: #e3e3e3;
+    margin: 0 auto 0 auto; }
   .work h2 {
+    width: 100%;
+    padding: .2em 0px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
     font-size: 1.5em;
     text-transform: uppercase; }
     .work h2 a {
       text-decoration: none;
       color: #000; }
-  .work h2:before {
-    content: '[ '; }
-  .work h2:after {
-    content: ' ]'; }
   .work .blurb {
-    color: #000; }
-  .work img {
-    float: right;
-    width: 40%;
-    margin-left: 10%;
-    margin-bottom: 20px; }
+    color: #000;
+    font-size: .9em; }
   .work .badge {
     width: 150px;
     margin-top: 80px;
