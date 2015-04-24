@@ -11,6 +11,27 @@ $font-stack: monaco,courier new;
     text-transform: uppercase;
 }
 
+footer {    
+    #byline {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        font-family: sans-serif;    
+        font-size: .8em;
+        text-shadow: 1px 1px 0px rgba(215, 255, 255, 1);
+        
+        a {
+            color: #000;
+        }
+    }
+    
+    #social-media {
+        position: fixed;
+        bottom: 5px;
+        left: 5px;
+    }
+}
+
 #word {
     font-family: $font-stack;
     width: 50%;

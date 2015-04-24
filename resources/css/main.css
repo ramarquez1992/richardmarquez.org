@@ -73,30 +73,6 @@ input.button {
 .clear {
   clear: both; }
 
-.grid {
-  background-image: url("resources/backgrounds/grid.png"); }
-
-.horizontal {
-  background-image: url("resources/backgrounds/horizontal.png"); }
-
-.dashed {
-  background-image: url("resources/backgrounds/dashed.png"); }
-
-.vertical {
-  background-image: url("resources/backgrounds/vertical.png"); }
-
-.purple {
-  background-color: #339; }
-
-.green {
-  background-color: #0f9712; }
-
-.aqua {
-  background-color: #0da47f; }
-
-.blue {
-  background-color: #3456c4; }
-
 .gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
@@ -153,7 +129,7 @@ footer {
   padding: 0;
   background-color: #222; }
 
-#diamond, #finger {
+#diamond {
   margin: auto;
   margin-bottom: 3em;
   width: 0;
@@ -163,7 +139,7 @@ footer {
   position: relative;
   top: -25px; }
 
-#diamond:after, #finger:after {
+#diamond:after {
   content: '';
   position: absolute;
   left: -25px;
@@ -236,7 +212,7 @@ footer {
   width: 50%;
   line-height: 1.4;
   font-size: 1.1em;
-  text-align: left; }
+  text-align: center; }
 .about .social-media {
   display: none; }
 
