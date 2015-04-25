@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    addLinkTargets('_blank');
+    //addLinkTargets('_blank');
 });
 
 function addLinkTargets(target) {

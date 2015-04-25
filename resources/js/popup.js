@@ -1,17 +1,38 @@
 $(document).ready(function() {
-    //addPopups();
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        addPopups();
+    }
 });
 
 function addPopups() {
-    $('.work').each(function() {
-        var pic = $(this).find('img').first();
+    $('.work:even').each(function() {
+        var popup = $(this).find('.popup').first();
+        popup.css('right', '50px');
+        popup.css('border-color', getRandomColor());
+
         $(this).hover(function() {
-            pic.css('display', 'block');
-            //pic.animo( { animation: 'bounceInRight', duration: .5 } );
+            popup.css('display', 'block');
+            popup.animo( { animation: 'bounceInRight', duration: .3 } );
         }, function() {
-            pic.css('display', 'none');
-            /*pic.animo( { animation: 'bounceOutRight', duration: .5 }, function() {
-                pic.css('display', 'none');
+            popup.css('display', 'none');
+            /*popup.animo( { animation: 'bounceOutRight', duration: 0 }, function() {
+                popup.css('display', 'none');
+            });*/
+        });
+    });
+    
+    $('.work:odd').each(function() {
+        var popup = $(this).find('.popup').first();
+        popup.css('left', '50px');
+        popup.css('border-color', getRandomColor());
+
+        $(this).hover(function() {
+            popup.css('display', 'block');
+            popup.animo( { animation: 'bounceInLeft', duration: .3 } );
+        }, function() {
+            popup.css('display', 'none');
+            /*popup.animo( { animation: 'bounceOutLeft', duration: 0 }, function() {
+                popup.css('display', 'none');
             });*/
         });
     });
