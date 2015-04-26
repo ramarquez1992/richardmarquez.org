@@ -7,7 +7,7 @@ function play() {
 }
 
 function displayGreetings() {
-    var audio = new Audio('greetings.wav');
+    var audio = new Audio('greetings.mp3');
     audio.play();
     setTimeout("displayInput()", 3000);
     
@@ -71,7 +71,7 @@ function blurInput() {
 }  
 
 function displayStrange() {
-    var audio = new Audio('strange.wav');
+    var audio = new Audio('strange.mp3');
     audio.play();
     setTimeout("displayChess()", 6000);
     
@@ -85,7 +85,7 @@ function displayStrange() {
 }
 
 function displayChess() {
-    var audio = new Audio('chess.wav');
+    var audio = new Audio('chess.mp3');
     audio.play();
     
     var span = $('<span>').appendTo('#container');
