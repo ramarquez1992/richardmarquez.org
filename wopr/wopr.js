@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    play();
+    $(document).focus(play());
 });
 
 function play() {
