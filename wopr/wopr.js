@@ -49,7 +49,7 @@ function nuke() {
     $('#nuke').attr("src", "");
     $('#nuke').attr("src", "nuke.gif");
     
-    var audio = new Audio('nuke.wav');
+    var audio = new Audio('nuke.mp3');
     audio.play();
     setTimeout("nuke()", 2500);
 }
