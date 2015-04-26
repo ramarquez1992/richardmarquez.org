@@ -14,7 +14,7 @@ function displayGreetings() {
     var span = $('<span>').appendTo('#container');
         
     span.typed({
-        strings: ["Greetings Professor Falken<br/><br/>"],
+        strings: ["Greetings Professor Falken<br/>"],
         typeSpeed: 50,
         showCursor: false
       });
