@@ -9,16 +9,11 @@ body {
   font-size: medium; }
 
 em {
-  font-weight: normal;
-  font-style: normal;
-  color: #00d; }
+  font-weight: bold;
+  font-style: normal; }
 
-a, a:visited {
-  opacity: 0.8; }
-
-a.button, a:hover, a:focus, a:active {
-  text-decoration: none;
-  opacity: 1; }
+a:hover, a:focus, a:active {
+  text-decoration: none; }
 
 h2 {
   font-size: 2.3em; }
@@ -270,6 +265,10 @@ footer {
         text-transform: lowercase;
         margin: .2em 0;
         text-decoration: none; }
+  .work em {
+    font-weight: normal;
+    font-style: normal;
+    color: #00d; }
 
 @media (min-width: 1050px) {
   .container {
