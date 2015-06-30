@@ -1,0 +1,71 @@
+@import 'global'
+
+@media (max-width: 1050px)
+  .container
+    width: 90%
+    margin: auto
+
+  #deep
+    height: 300px
+
+  header
+    padding-bottom: 0
+    position: static
+
+    h1#title
+      float: none
+      text-align: center
+      margin: 0 auto
+
+    nav
+      margin-top: .5em
+      display: block
+      background-color: $light-gray
+      padding: 0
+
+      a
+        width: 30%
+        margin: 0
+        padding: .2em 0
+        text-align: center
+        border-right: 1px solid $gray
+
+        &:last-child
+          border-right: none
+
+    .social-media
+      display: block
+      position: absolute
+      padding: 0
+      margin: 0
+
+      img
+        opacity: 1
+        width: 1.7em
+
+  .work:nth-child(odd)
+    margin-right: auto
+
+  .work
+    transition-duration: .3s
+    float: none
+    display: block
+    width: 90%
+    padding: 0
+    margin: 0em auto 3em auto
+    min-height: 0px
+
+    h2
+      text-align: center
+
+  .blurb
+    text-align: center
+
+  .about
+    .blurb
+      width: 100%
+      font-size: 1.1em
+
+  input.button
+    margin: auto
+    -webkit-appearance: none

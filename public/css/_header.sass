@@ -1,0 +1,48 @@
+@import 'global'
+
+$x-margin: 2em
+
+svg#deep
+  padding: 0
+  margin: 0
+  display: block
+
+header
+  @extend .gray
+  border-bottom: 1px solid $light-gray
+  padding: .5em 0
+  position: relative
+  margin-top: -10px
+
+  h1#title
+    float: left
+    margin-left: $x-margin
+    font-size: 1em
+    text-transform: uppercase
+
+    a
+      text-decoration: none
+      color: #000
+
+  nav
+    font-size: 1em
+    text-transform: lowercase
+    display: inline-block
+    margin-left: 1em
+
+    a
+      display: inline-block
+      margin-right: 1em
+      color: #000
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+  .social-media
+    position: absolute
+    top: .5em
+    right: 1em
+
+    a
+      margin-left: .2em

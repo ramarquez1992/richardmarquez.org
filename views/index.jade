@@ -1,0 +1,107 @@
+extends layout
+
+block content
+  svg#deep
+
+  header
+    .social-media
+      a(href='https://www.facebook.com/richard92m')
+        img(src='/img/social_media/facebook.png', alt='Facebook')
+      a(href='http://www.linkedin.com/pub/richard-marquez/84/927/733/')
+        img(src='/img/social_media/linkedin.png', alt='LinkedIn')
+      a(href='https://github.com/richard92m')
+        img(src='/img/social_media/github.png', alt='GitHub')
+
+    h1#title
+      a(href='/') { Richard Marquez }
+
+    nav
+      a(href='https://github.com/richard92m') Code
+      a(href='http://careers.stackoverflow.com/richard92m') R&eacute;sum&eacute;
+      a(href='mailto:richard92m@me.com') Contact
+
+    .clear
+
+  section.about
+    .container
+      .blurb
+        p
+          | Hi, I'm Richard Marquez. I'm a freelance software developer, an
+          | insatiable learner, and a tinkerer. Whether it's programming or
+          | web design, networking or electrical engineering, you can’t keep my
+          | hands away from it.
+
+  #diamond
+
+  .container
+    a.work(href='https://itunes.apple.com/us/app/winona-state-upac/id944827063')
+      .popup
+        img(src='img/portfolio/upac.png', alt='Winona State UPAC')
+
+      h2 Winona State UPAC
+
+      .blurb
+        p
+          | See  <em>WSU UPAC</em>'s upcoming events and
+          | get notifications, enter raffles, view photos, and contact board members.
+
+    a.work(href='http://dotnetnuke.com')
+      .popup
+        img(src='img/portfolio/uway.png', alt='United Way DNN template')
+
+      h2 United Way DNN template
+
+      .blurb
+        p
+          | A custom template for <em>United Way</em>
+          | organizations on the <em>DotNetNuke</em> CMS
+          | platform adhering to branding guidelines.
+
+    a.work(href='https://github.com/richard92m/sad')
+      .popup
+        img(src='img/portfolio/sad.png', alt='SAD')
+
+      h2 SAD
+
+      .blurb
+        p
+          | Simultaneous localization and mapping drone built on <em>Arduino</em>
+          | with remote control panel + visualization (in development).
+
+    a.work(href='http://milleringenuity.com')
+      .popup
+        img(src='img/portfolio/miller.png', alt='Miller Ingenuity')
+
+      h2 Miller Ingenuity
+
+      .blurb
+        p
+          | A <em>Stage-Gate</em> product development implementation with multi-user
+          | support for <em>Miller Ingenuity</em>.
+
+    a.work(href='http://itechra.com')
+      .popup
+        img(src='img/portfolio/hof.png', alt='Hall of Fame')
+
+      h2 Itechra Hall of Fame System
+
+      .blurb
+        p
+          | A sports hall of fame system
+          | designed for public use on large <em>touchscreen</em> monitors. Browse or
+          | search an institution's hall of fame, team rosters,
+          | schedules, news and events.
+
+    .work
+      ul
+        li
+          a(href='word') Word
+        li
+          a(href='deep') space.plumbing
+        li
+          a(href='wopr') W.O.P.R.
+
+  .clear
+
+  footer
+    p &copy; <em>Richard Marquez</em> 2015

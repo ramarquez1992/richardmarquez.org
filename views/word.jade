@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title= title
+    meta(name='description', content='Learn a new word.')
+    link(rel='apple-touch-icon', href='/img/favicon.png')
+    link(rel='stylesheet', href='/css/word.css')
+
+  body
+    #loading Reading...
+
+    footer
+      span#social-media
+        <div style="float: left; width: 80px;">
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <iframe class="facebook" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmarquez.space%2Fword&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="width: 100px; margin-left:5px; border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+
+      span#byline
+        By <a href="http://marquez.space">Richard Marquez</a>
+
+    // JS includes
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='js/global.js')
+    script(src='js/word.js')
+
+    // Google Analytics
+    script.
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                  (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-58631802-1', 'auto');ga('send', 'pageview');
+  
