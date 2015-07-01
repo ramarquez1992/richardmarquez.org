@@ -18,4 +18,8 @@ router.get('/wopr', function(req, res, next) {
     res.render('wopr', { title: 'W.O.P.R.' });
 });
 
+router.get('/dice', function(req, res, next) {
+    res.render('dice', { title: 'rolling...' });
+});
+
 module.exports = router;
