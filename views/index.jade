@@ -22,11 +22,18 @@ block content
 
     .clear
 
-  section.about
+  section.about(itemscope, itemtype='http://schema.org/Person')
     .container
+      meta(itemprop='url', content='http://marquez.space')
+      meta(itemprop='image', content='http://marquez.space/img/richardmarquez.jpg')
+      meta(itemprop='birthDate', content='1992-05-06')
+      //meta(itemprop='description', content='3rd person bio')
+
+
       .blurb
         p
-          | Hi, I'm Richard Marquez. I'm a freelance software developer, an
+          | Hi, I'm <span itemprop="name">Richard Marquez</span>. I'm a freelance
+          | <span itemprop="jobTitle">Software Developer</span>, an
           | insatiable learner, and a tinkerer. Whether it's programming or
           | web design, networking or electrical engineering, you can’t keep my
           | hands away from it.
