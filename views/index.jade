@@ -1,6 +1,18 @@
 extends layout
 
 block content
+  #shade
+
+  #contact
+    form(action='about', name='contact', method='post')
+        input(name='name', type='text', value='Name', id='name')
+        input(name='email', type='text', value='Email', id='email')
+        textarea(name='message', cols='40', rows='10', id='message') Message
+        input(name='submit', type='submit', value='Send', id='submit')
+
+  #banner
+    span#hire &middot; Available for work &middot;
+
   svg#deep
 
   header
