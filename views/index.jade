@@ -2,9 +2,9 @@ extends layout
 
 block content
   #shade
-
   #contact
-    form(action='about', name='contact', method='post')
+    h2 Contact
+    form(action='/', name='contact', method='post')
         input(name='name', type='text', value='Name', id='name')
         input(name='email', type='text', value='Email', id='email')
         textarea(name='message', cols='40', rows='10', id='message') Message
@@ -30,7 +30,7 @@ block content
     nav
       a(href='https://github.com/richard92m') Code
       a(href='http://careers.stackoverflow.com/richard92m') R&eacute;sum&eacute;
-      a(href='mailto:richard92m@me.com') Contact
+      a#contact-link Contact
 
     .clear
 
