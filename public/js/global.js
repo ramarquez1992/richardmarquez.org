@@ -1,5 +1,6 @@
 $(document).ready(function() {
     //addLinkTargets('_blank');
+    colorSquares();
 });
 
 function addLinkTargets(target) {
@@ -7,6 +8,12 @@ function addLinkTargets(target) {
         if ($(this).attr('href') != '#contact' && $(this).attr('href') != 'index.php') {
             $(this).attr('target', target);
         }
+    });
+}
+
+function colorSquares() {
+    $('.square').each(function() {
+        $(this).css('border-color', getRandomColor());
     });
 }
 
