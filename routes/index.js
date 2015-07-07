@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Richard Marquez' });
 });
 
+router.get('/nocomments', function(req, res, next) {
+    res.render('nocomments', { title: 'nocomments.css' });
+});
+
 router.get('/word', function(req, res, next) {
     res.render('word', { title: 'reading...' });
 });
