@@ -8,7 +8,11 @@ html, body
   font-family: $font-stack
   font-weight: lighter
 
-p
+h1, h2, h3, h4
+  font-family: $header-font
+  font-weight: lighter
+
+p, li
   a, a:visited
     color: #610fc6
     background-color: rgba(190, 180, 239, 0.2)
@@ -34,12 +38,11 @@ p
 
 header
   margin-top: 5em
+  margin-bottom: 10em
   text-align: center
 
   #title
-    font-family: $header-font
     text-transform: lowercase
-    font-weight: lighter
     margin-bottom: 1.5em
 
     a
@@ -65,5 +68,36 @@ header
       color: #999
       text-decoration: none
 
+      &:hover
+        opacity: .6
+
       &:last-child
         margin-right: 0
+
+.container
+  position: relative
+  width: 600px
+  margin: 3em auto
+
+section
+  min-height: 300px
+
+  img
+    position: absolute
+    top: -50px
+    right: 0
+    opacity: .1
+    width: 275px
+
+  ol
+    em
+      font-style: normal
+      font-weight: bold
+
+    pre
+      display: inline
+      background-color: #eee
+
+footer
+  padding: 2em 0
+  text-align: center
