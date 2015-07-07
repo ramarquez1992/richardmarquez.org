@@ -1,6 +1,6 @@
 @import 'global'
 
-@media (max-width: 1050px)
+@media (max-width: 900px)
   .container
     width: 90%
     margin: auto
@@ -44,21 +44,6 @@
         opacity: 1
         width: 1.7em
 
-  .work:nth-child(odd)
-    margin-right: auto
-
-  .work
-    transition-duration: .3s
-    float: none
-    display: block
-    width: 90%
-    padding: 0
-    margin: 0em auto 3em auto
-    min-height: 0px
-
-    h2
-      text-align: center
-
   .blurb
     text-align: center
 
@@ -67,6 +52,11 @@
       width: 100%
       font-size: 1.1em
 
-  input.button
-    margin: auto
-    -webkit-appearance: none
+  a.work
+    display: block
+    width: 80%
+    padding: 0
+    margin: 2em auto
+
+    &:nth-child(3n+3)
+      margin-right: auto

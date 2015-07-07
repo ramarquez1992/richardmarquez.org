@@ -5,6 +5,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -103,6 +107,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -169,6 +177,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -229,6 +241,10 @@ html * {
 body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
+
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
 
 em {
   font-weight: bold;
@@ -306,6 +322,10 @@ html * {
 body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
+
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
 
 em {
   font-weight: bold;
@@ -438,6 +458,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -506,10 +530,8 @@ a.work {
     opacity: 0.5;
     border: 1px solid #ccc;
     padding: 5px; }
-  a.work:hover {
-    -webkit-filter: grayscale(0%); }
-    a.work:hover .thumb {
-      opacity: 1; }
+  a.work:hover .thumb {
+    opacity: 1; }
 
 html * {
   margin: 0; }
@@ -517,6 +539,10 @@ html * {
 body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
+
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
 
 em {
   font-weight: bold;
@@ -658,6 +684,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -709,7 +739,7 @@ input.button {
 .divider {
   margin-bottom: 8em; }
 
-@media (min-width: 1050px) {
+@media (min-width: 900px) {
   .container {
     width: 900px;
     margin: auto; }
@@ -723,6 +753,10 @@ body {
   font-family: calibri, helvetica-neue, helvetica, arial, sans-serif;
   font-size: medium; }
 
+input.button {
+  margin: auto;
+  -webkit-appearance: none; }
+
 em {
   font-weight: bold;
   font-style: normal; }
@@ -774,7 +808,7 @@ input.button {
 .divider {
   margin-bottom: 8em; }
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
   .container {
     width: 90%;
     margin: auto; }
@@ -812,20 +846,6 @@ input.button {
         opacity: 1;
         width: 1.7em; }
 
-  .work:nth-child(odd) {
-    margin-right: auto; }
-
-  .work {
-    transition-duration: 0.3s;
-    float: none;
-    display: block;
-    width: 90%;
-    padding: 0;
-    margin: 0em auto 3em auto;
-    min-height: 0px; }
-    .work h2 {
-      text-align: center; }
-
   .blurb {
     text-align: center; }
 
@@ -833,8 +853,12 @@ input.button {
     width: 100%;
     font-size: 1.1em; }
 
-  input.button {
-    margin: auto;
-    -webkit-appearance: none; } }
+  a.work {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 2em auto; }
+    a.work:nth-child(3n+3) {
+      margin-right: auto; } }
 
 /*# sourceMappingURL=main.css.map */
