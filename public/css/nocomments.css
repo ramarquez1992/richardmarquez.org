@@ -14,19 +14,6 @@ p a, p a:visited, li a, li a:visited {
   p a:hover, p a:visited:hover, li a:hover, li a:visited:hover {
     opacity: 0.8; }
 
-.social-media {
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em; }
-  .social-media a {
-    display: inline-block; }
-    .social-media a img {
-      width: 1.3em;
-      margin-right: 2px;
-      opacity: 0.8; }
-      .social-media a img:hover {
-        opacity: 1; }
-
 header {
   margin-top: 5em;
   margin-bottom: 10em;
