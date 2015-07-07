@@ -45,7 +45,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -143,7 +143,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -209,7 +209,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -270,7 +270,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -347,7 +347,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -478,7 +478,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -489,65 +489,27 @@ input.button {
 .divider {
   margin-bottom: 8em; }
 
-.work {
-  transition-duration: 0.3s;
-  float: left;
+a.work {
   display: inline-block;
-  width: 40%;
-  padding: 3%;
-  min-height: 150px;
+  width: 30%;
+  margin-right: 3%;
   margin-bottom: 3em;
-  color: inherit;
   text-decoration: none; }
-  .work:nth-child(odd) {
-    margin-right: 5%; }
-  .work .popup {
-    z-index: 1000;
-    display: none;
-    position: fixed;
-    width: 20%;
-    top: 50px;
-    padding: 4em;
-    margin: 0;
-    background-color: #fff;
-    border: 0.7em solid #d3d3d3;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.3); }
-    .work .popup img {
-      width: 100%; }
-  .work h2 {
+  a.work:nth-child(3n+3) {
+    margin-right: 0; }
+  a.work .logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%; }
+  a.work .thumb {
     width: 100%;
-    padding: 0.2em 0px;
-    margin-bottom: 1em;
-    border-top: 1px solid #d3d3d3;
-    border-bottom: 1px solid #d3d3d3;
-    font-size: 1.5em;
-    text-transform: uppercase; }
-    .work h2 a {
-      text-decoration: none;
-      color: #000; }
-  .work .blurb {
-    color: #000;
-    font-size: 0.9em; }
-  .work ul {
-    padding: 0;
-    list-style-type: none; }
-    .work ul li {
-      width: 100%;
-      border-bottom: 1px solid #d3d3d3; }
-      .work ul li a {
-        display: inline-block;
-        width: 100%;
-        font-size: 1.2em;
-        text-transform: lowercase;
-        margin: 0.2em 0;
-        text-decoration: none; }
-  .work em {
-    font-weight: normal;
-    font-style: normal;
-    color: #00d; }
+    opacity: 0.5;
+    border: 1px solid #ccc;
+    padding: 5px; }
+  a.work:hover {
+    -webkit-filter: grayscale(0%); }
+    a.work:hover .thumb {
+      opacity: 1; }
 
 html * {
   margin: 0; }
@@ -596,7 +558,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -736,7 +698,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
@@ -801,7 +763,7 @@ input.button {
 .clear {
   clear: both; }
 
-.gray, header, footer, .work:hover {
+.gray, header, footer {
   background-color: #e3e3e3;
   color: #333; }
 
