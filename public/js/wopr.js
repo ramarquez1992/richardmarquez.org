@@ -3,14 +3,17 @@ $(document).ready(function() {
 });
 
 function play() {
+    displayGreetings();
+}
+
+function ifIE() {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf("MSIE ");
 
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {      // If Internet Explorer, return version number
         alert('ie');
         $('#wopr').css('color', '#f00 !important');
-
-    displayGreetings();
+    }
 }
 
 function displayGreetings() {
@@ -19,6 +22,7 @@ function displayGreetings() {
     setTimeout("displayInput()", 3000);
     
     var span = $('<span>').appendTo('#container');
+    ifIE();
         
     span.typed({
         strings: ["Greetings Professor Falken<br/>"],
