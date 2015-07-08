@@ -6,13 +6,12 @@ function play() {
     displayGreetings();
 }
 
-function ifIE() {
+function ifIE(element) {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf("MSIE ");
 
     if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {      // If Internet Explorer, return version number
-        alert('ie');
-        $('#wopr').css('color', '#f00 !important');
+        element.css('color', '#f00 !important');
     }
 }
 
@@ -22,8 +21,8 @@ function displayGreetings() {
     setTimeout("displayInput()", 3000);
     
     var span = $('<span>').appendTo('#container');
-    ifIE();
-        
+    ifIE(span);
+
     span.typed({
         strings: ["Greetings Professor Falken<br/>"],
         typeSpeed: 50,
