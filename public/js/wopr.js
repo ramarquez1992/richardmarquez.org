@@ -21,7 +21,7 @@ function displayGreetings() {
     setTimeout("displayInput()", 3000);
     
     var span = $('<span>').appendTo('#container');
-    ifIE(span);
+    //ifIE(span);
 
     span.typed({
         strings: ["Greetings Professor Falken<br/>"],
