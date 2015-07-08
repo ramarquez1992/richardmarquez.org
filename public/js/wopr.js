@@ -6,22 +6,12 @@ function play() {
     displayGreetings();
 }
 
-function ifIE(element) {
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {      // If Internet Explorer, return version number
-        element.css('color', '#f00 !important');
-    }
-}
-
 function displayGreetings() {
     var audio = new Audio('/audio/greetings.mp3');
     audio.play();
     setTimeout("displayInput()", 3000);
     
     var span = $('<span>').appendTo('#container');
-    //ifIE(span);
 
     span.typed({
         strings: ["Greetings Professor Falken<br/>"],
