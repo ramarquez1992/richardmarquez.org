@@ -28,7 +28,7 @@ function displayInput() {
     var input = $('#input');
     input.keypress(function(e) {
         if (e.which == 13) {
-            if (input.val() == "hello") {
+            if (input.val().toUpperCase() == "hello".toUpperCase()) {
                 blurInput();
                 displayStrange();
             } else {
