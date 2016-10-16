@@ -26,4 +26,8 @@ router.get('/dice', function(req, res, next) {
     res.render('dice', { title: 'rolling...' });
 });
 
+router.get('/code-foo', function(req, res, next) {
+    res.render('code-foo', { title: 'code-foo' });
+});
+
 module.exports = router;
