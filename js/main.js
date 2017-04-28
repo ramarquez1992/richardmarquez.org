@@ -7,7 +7,7 @@ $(window).resize(function() {
 });
 
 function initColorBlocks() {
-  $('.square').each(function() {
+  $('#colors .square').each(function() {
     var colorBlock = $(this);
     var timerId;
 
