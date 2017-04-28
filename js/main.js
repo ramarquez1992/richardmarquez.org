@@ -2,6 +2,10 @@ $(document).ready(function() {
   initColorBlocks();
 });
 
+$(window).resize(function() {
+  initColorBlocks();
+});
+
 function initColorBlocks() {
   $('.square').each(function() {
     var colorBlock = $(this);
