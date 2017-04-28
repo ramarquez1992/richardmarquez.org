@@ -12,7 +12,9 @@ input.button {
 
 em {
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  text-transform: uppercase;
+  color: #474480; }
 
 a:hover, a:focus, a:active {
   text-decoration: none; }
@@ -22,16 +24,17 @@ header {
   left: 0;
   top: 0;
   width: 25%;
-  min-height: 100%;
-  background-color: #333; }
+  min-height: 100%; }
   header #avatar {
+    transition: all 0.1s ease-in-out;
     box-shadow: 10px 10px 29px -12px rgba(0, 0, 0, 0.57);
     position: absolute;
     top: 30%;
     left: 50%;
     width: 80%;
     background-color: #fff;
-    border-radius: 5px; }
+    border-radius: 5px;
+    z-index: 100; }
     header #avatar h2 {
       text-align: center;
       font-size: 1.2em;
@@ -41,7 +44,11 @@ header {
       width: 100%;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      border-bottom: 4px solid #333; }
+      border-bottom: 3px dashed #ddd;
+      background-color: #aaa;
+      cursor: cell; }
+    header #avatar:hover {
+      transform: scale(1.2); }
 
 main {
   position: absolute;
@@ -54,7 +61,7 @@ main {
     line-height: 1.3em;
     font-size: 1em; }
     main .blurb p {
-      margin-bottom: 15px; }
+      margin-bottom: 1em; }
   main .social-media a {
     display: inline-block; }
     main .social-media a img {

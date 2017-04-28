@@ -17,7 +17,7 @@ html
 
   body
     header
-      .divider
+      #colors
         .square
         .square
         .square
@@ -26,19 +26,22 @@ html
 
       #avatar
         img(src='./img/richardmarquez.jpg')
-        h2 Richard Marquez
+        h2
+          em Richard Marquez
+
 
     main#about(itemscope, itemtype='http://schema.org/Person')
-      meta(itemprop='url', content='http://marquez.space')
-      meta(itemprop='image', content='http://marquez.space/img/richardmarquez.jpg')
+      meta(itemprop='name', content='Richard Marquez')
+      meta(itemprop='jobTitle', content='Software Engineer')
+      meta(itemprop='url', content='http://richardmarquez.org')
+      meta(itemprop='image', content='http://richardmarquez.org/img/richardmarquez.jpg')
       meta(itemprop='birthDate', content='1992-05-06')
 
       h1 About me:
 
       .blurb
         p
-          | Hi, I'm <span itemprop="name">Richard Marquez</span>. I'm a
-          | <span itemprop="jobTitle">software engineer</span>, an
+          | Hi, I'm a <em>software engineer</em>, an
           | insatiable learner, and a tinkerer. Whether it's programming or
           | web design, networking or electrical engineering, you can’t keep my
           | hands away from it.
@@ -50,8 +53,6 @@ html
           img(src='./img/social_media/linkedin.png', alt='LinkedIn')
         a(href='https://github.com/richard92m')
           img(src='./img/social_media/github.png', alt='GitHub')
-
-
 
 
     script(src='./lib/jquery.min.js')
