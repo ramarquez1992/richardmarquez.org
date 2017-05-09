@@ -1,0 +1,53 @@
+$font-stack: Montserrat,calibri,helvetica-neue,helvetica,arial,sans-serif
+
+$primary-color: #292e36
+$secondary-color: #474480
+
+html *
+  margin: 0
+
+body
+  font-family: $font-stack
+  font-size: medium
+  color: $primary-color
+
+input.button
+  margin: auto
+  -webkit-appearance: none
+
+em
+  font-weight: bold
+  font-style: normal
+  text-transform: uppercase
+  color: $secondary-color
+
+a, a:visited, a:hover, a:focus, a:active
+  text-decoration: none
+
+.blurb
+  line-height: 1.4em
+  font-size: 1em
+
+  p
+    margin-bottom: 1em
+
+.social-media
+  a
+    display: inline-block
+
+    img
+      width: 1.3em
+      margin-right: 4px
+      opacity: 0.8
+
+      &:hover
+        opacity: 1
+
+.clear
+  clear: both
+
+.square
+  padding: 0
+  margin: 0
+  height: 0
+  box-shadow: inset -15px 0px 30px -20px rgba(0,0,0,0.6)
