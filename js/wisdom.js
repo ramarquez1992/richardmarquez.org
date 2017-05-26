@@ -6,7 +6,6 @@ $( document ).ready( function () {
         quotes = data.quotes;
         initQuote();
     } );
-
 } );
 
 function initQuote() {
