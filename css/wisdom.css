@@ -22,4 +22,11 @@ main {
   #github img {
     width: 1.5em; }
 
+@media only screen and (max-width: 768px) {
+  #quote {
+    font-size: 3em; }
+
+  #attribution {
+    font-size: 0.9em; } }
+
 /*# sourceMappingURL=wisdom.css.map */
