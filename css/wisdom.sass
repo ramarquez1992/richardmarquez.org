@@ -1,14 +1,34 @@
 main
+  width: 80%
+  margin-left: 10%
   color: #020202
-  margin-top: 1.7em
-  text-align: center
-  font-size: 10em
+  margin-top: 10%
   font-family: "Permanent Marker"
 
+#quote
+  text-align: center
+  font-size: 6em
+
+  &::before, &::after
+    content: "\""
+
+#attribution
+  font-size: 1.5em
+  text-align: right
+
 #github
-  display: none
+  //display: none
   position: fixed
   bottom: 0.5em
   right: 0.5em
   img
-    width: 2em
+    width: 1.5em
+
+
+// Size for mobile
+@media only screen and (max-width: 768px)
+  #quote
+    font-size: 3em
+
+  #attribution
+    font-size: .9em
