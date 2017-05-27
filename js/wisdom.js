@@ -11,4 +11,5 @@ $( document ).ready( function () {
 function initQuote() {
     var randomIndex = Math.floor((Math.random() * quotes.length));
     $('#quote').html(quotes[randomIndex]);
+    // $('#quote').html(quotes[11]);
 }
