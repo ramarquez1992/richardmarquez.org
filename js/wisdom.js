@@ -26,5 +26,5 @@ function initQuote(quotes) {
         // }
       });
     });
-  }, 3000);
+  }, 5000);
 }
