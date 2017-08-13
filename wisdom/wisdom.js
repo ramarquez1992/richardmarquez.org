@@ -4,7 +4,7 @@ var quotesList = [];
 
 $(document).ready(function () {
   // Remember this is called asynchronously
-  $.getJSON('./js/quotes.json', function (data)  {
+  $.getJSON('./quotes.json', function (data)  {
     quotes = data.quotes;
     initQuote(quotes);
   });
